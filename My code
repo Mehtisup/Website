@@ -1,0 +1,765 @@
+                        <!DOCTYPE html>
+                        <html>
+                        <head>
+                            <meta charset="utf-8">
+                            <meta name="viewport" content="width=device-width, initial-scale=1">
+                            <title>Meti-Bozorgi</title>
+                            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+                            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+                        <style>
+                            #light {
+                                top: -420px;
+                                transition: 1s;
+                            }
+
+                            #line {
+                                background-color: red;
+                            }
+                            #loose {
+                                text-align: center;
+                                width: 50px;
+                                padding: 10px;
+                                font-size: 30px;
+                                
+                                border-radius: 50%;
+                                background-color: white;
+                                margin: 0 3px;
+                                margin-top: 10px;
+                            }
+                          #loosee {
+                                text-align: center;
+                                width: 50px;
+                                padding: 10px;
+                                font-size: 30px;
+                                border-radius: 50%;
+                                color: white;
+                                background-color: red;
+                                margin: 0 3px;
+                                margin-top: 10px;
+                            }
+                            #loose:hover {
+                                transform: translateY(10px);
+                                transition: 0.6s;
+                            }
+                            #loosee:hover {
+                                transform: translateY(10px);
+                                transition: 0.6s;
+                            }
+                            #looseee:hover {
+                                transform: translateY(10px);
+                                transition: 0.6s;
+                            }
+                            #looseeee:hover {
+                                transform: translateY(10px);
+                                transition: 0.6s;
+                            }
+                            #looseeeee:hover {
+                                transform: translateY(10px);
+                                transition: 0.6s;
+                            }
+
+                            #yek:hover {
+                                background-color: red;
+                            }
+
+                             #looseee {
+                                text-align: center;
+                                width: 50px;
+                                padding: 10px;
+                                font-size: 30px;
+                                border-radius: 50%;
+                                color: white;
+                                background-color: purple;
+                                margin: 0 3px;
+                                margin-top: 10px;
+                            }       
+                            body {
+                                background-color: whitesmoke;
+                            }
+                            #gss {
+                                animation: forwards infinite alternate;
+                                animation-duration: 1.5s;
+                                animation-name: sfs;
+                            }
+                            @keyframes sfs {
+                                from {opacity: 0;}
+                                to {opacity: 5;}
+                            }
+                            @keyframes sfs {
+                                from {opacity: 0;}
+                                to {opacity: 5;}
+                            }
+                            #ekh {
+                                animation: up-to-down 2s ease-in-out forwards infinite alternate;
+                            }
+
+                            @keyframes up-to-down {
+                                0% {
+                                    transform: translateY(20px);
+                                }
+                            }
+                                                   #looseeee {
+                                text-align: center;
+                                width: 50px;
+                                padding: 10px;
+                                font-size: 30px;
+                                color: whitesmoke   ;
+                                background-color: blue ;
+                                margin: 0 3px;
+                                margin-top: 10px;
+                                border-radius: 50%;
+                            } 
+                                                   #looseeeee {
+                                text-align: center;
+                                width: 50px;
+                                padding: 10px;
+                                font-size: 30px;
+                                color: whitesmoke   ;
+                                background-color: blue ;
+                                margin: 0 3px;
+                                border-radius: 50%;
+                                margin-top: 10px;
+                            }       
+
+                            #snake {
+                                background-image: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/22/444627-space-Earth.jpg");
+                                border-bottom: 2px solid white;
+
+                                
+                                background-repeat: no-repeat;
+                            }          
+                        
+
+                            #ooo:hover {
+                                border: 1px solid white;
+                            }
+                            #ay {
+                                animation: up-to-down 1s ease-in-out forwards infinite alternate;
+                            }
+                            @keyframes up-to-down {
+                                100% {
+                                    transform: translateY(10px);
+                                }
+                            }
+
+                            #aek {
+                                border-radius: 20px;
+                            }
+                          
+                            @keyframes left-to-right {
+                                0% {
+                                    transform: translateX(40px);
+                                }
+                            }
+
+                        #hooray {
+                            animation: up 2s ease-in-out forwards infinite alternate;
+                        }
+                        @keyframes up {
+                            20% {
+                                transform: translateY(20px);
+                            }
+                        }
+                        #monkey {
+                            animation: right 1s ease-in-out;
+                        }
+                        @keyframes right {
+                            0% {
+                                transform: translateX(-1700px);
+                            }
+                        }
+
+                        @keyframes left {
+                            0% {    
+                                transform: translateY(-200px);
+                            }
+                        }
+ 
+
+                        body {
+                            background-color: white;
+                        }
+                        #BBC:hover {
+                            background-color: black;
+                        }
+
+  .rotate:hover {
+    animation: rotate 1s ease-in-out;
+    display: inline-block;
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+  }
+
+  .cheese:hover {
+    animation: rotate 1s ease-in-out;
+    display: inline-block;
+  }
+  @keyframes rotate {
+    0% {
+        transform: rotate(360deg);
+    }
+  }
+
+.cat {
+    position: relative;
+}
+.dog {
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    color: white;
+    transition: 0.5s;
+    background-color: black;
+}
+.cat:hover .dog {
+    height: 100%;
+    bottom: 0;
+}
+                        a {
+                            text-decoration: none;
+                        }
+                        #light {
+                            animation: down 1s ease-in-out;
+
+                        }
+                        @keyframes down {
+                            0% {
+                                transform: translateY(-50px);
+                            }
+                        }
+                        #gg {
+                            font-size: 14px;
+                        }
+
+                        #star {
+                            font-size: 20px;
+                        }
+
+                        @keyframes up-to-down {
+                            10% {
+                                transform: translateY(30px);
+                            }
+                        }
+                    .checked {
+                        color: orange;
+                    }
+                        h5:hover {
+                        
+                            
+                        }
+
+                        #star:hover {
+                            color: ;
+                        }
+
+                        #star {
+                            animation-name: come;
+                            animation-duration: 1.5s;
+                        }
+                        @keyframes come {
+                            from {opacity: 0;}
+                            to {opacity: 5;}
+                        }
+                        #star:hover {
+                            color: white;
+                            border-bottom: 2px solid white;
+                        }
+
+
+
+                        </style>
+                        </head>
+                        <body class="bg-black">
+
+
+                            
+                        <div class="container-fluid" id="snake" style="height: 1700px;">
+                            <div class="row">
+
+                                <div style="text-align: center;margin-top: 70px" id="monkey">
+                                    <img src="https://s23.picofile.com/file/8448280100/photo_2022_03_11_22_40_35.jpg" style="width:250px;height: 250px;border-radius: 50%;">
+                                    <h1 style="font-size: 45px;" class="mt-3 text-primary"  class="pacc" ><b>Meti Bozorgi</b></h1>
+                                    <br>
+                                    <h4 class="text-danger" id="gss"><b>Freelance Web Designer</b></h4>
+                                    <h5 class="text-white">I'm a creative web Designer with 1 year experience. I design and develop services for customers.</h5>
+
+
+                                    <a id="loose"  href="#" class="fa fa-telegram"></a>
+                                    <a id="loosee" href="#" class="fa fa-youtube"></a>
+                                    <a id="looseee" href="#" class="fa fa-instagram"></a>
+                                 
+                                    <a id="looseeeee" href="#" class="fa fa-github"></a>
+                                </div>
+
+                                        <div class="container " style="margin-top: 140px;">
+                                            <div class="row">
+                                        <div class="col-sm-5">  
+                                        <h1 class="text-primary">About me</h1>
+                                        <p class="text-white">I design and develop
+    services for customers of all sizes, specializing in creating stylish, modern websites. When I started of all sizes, specializing in creating stylish, 
+    modern websites
+    web services and online stores.<br> My passion is to design digital user experiences through the bold interface and meaningful interactions. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><br><br> <button type="button" class="rotate btn text-white " style="background-color:rgb(153, 51, 255)">HIRE ME</button>
+                                <button type="button" class="cheese btn text-white"  style="margin-left: 14px;background-color: rgb(153, 51, 255)">CONTACT</button></p>
+
+    </div>
+    <div class="col-sm-4" style="">
+        <h1 class="text-black">Experience</h1>
+        <p class="text-white"> When I started of all sizes, specializing in creating stylish, modern websites web services and online stores.
+My passion is to design digital user experiences through the bold interface and meaningful interactions. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><br></p>
+        </div>
+    <div class="col-sm-2 mt-3">
+        <h5 class="text-white" class="homie">HTML</h5>            
+        <div class="progress">
+            <div id="ag" class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width:10"></div>
+            </div> 
+                <h5 class="text-white mt-1">CSS</h5>            
+        <div class="progress">
+            <div id="kg" class="progress-bar progress-bar-animated progress-bar-striped bg-success" style=":%;"></div>
+            </div> 
+                <h5 class="text-white mt-1">JAVA SCRIPT</h5>            
+        <div class="progress">
+            <div id="sg" class="progress-bar progress-bar-animated progress-bar-striped bg-warning  " style=":5%;"></div>
+            </div> 
+                <h5 class="text-white mt-1">BOOTSTRAP 5</h5>            
+        <div  class="progress">
+            <div id="mg" class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style=":12%;"></div>
+            </div> 
+
+    </div>
+    <div class="col-sm-1">
+                
+            </div>
+
+    <script>
+    var i = 0;
+
+    if (i == 0) {
+        i = 1;
+            var elemm = document.getElementById("kg");
+        
+        
+        var width = 1;
+        var id = setInterval(frame , 500);
+        function frame() {
+            if (width >= 80) {
+                
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+             
+                elemm.style.width = width + "%";
+
+            
+            }
+        }
+    }
+
+    </script>
+
+    <script>
+    var i = 0;
+
+    if (i == 0) {
+        i = 1;
+        var elem = document.getElementById("ag");
+
+        var width = 1;
+        var id = setInterval(frame , 400);
+        function frame() {
+            if (width >= 90) {
+                
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elem.style.width = width + "%";
+
+            }
+        }
+    }
+
+    </script>
+
+    <script>
+    var i = 0;
+
+    if (i == 0) {
+        i = 1;
+        var elemmm = document.getElementById("sg");
+
+        var width = 1;
+        var id = setInterval(frame , 900);
+        function frame() {
+            if (width >= 65) {
+                
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elemmm.style.width = width + "%";
+
+            }
+        }
+    }
+
+    </script>
+
+    <script>
+    var i = 0;
+
+    if (i == 0) {
+        i = 1;
+        var elemmmmm = document.getElementById("mg");
+
+        var width = 1;
+        var id = setInterval(frame , 900 );
+        function frame() {
+            if (width >= 60) {
+                
+                clearInterval(id);
+                i = 0;
+            } else {
+                width++;
+                elemmmmm.style.width = width + "%";
+
+            }
+        }
+    }
+
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+
+    <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+            document.getElementById("light").style.backgroundColor = "rgb(153, 51, 255)  ";
+            document.getElementById("light").style.top = "0";
+            document.getElementById("light").style.display = "block"
+
+        } else {
+            document.getElementById("light").style.backgroundColor = "black";
+            document.getElementById("light").style.display = "none"
+            ;
+            
+        }
+    }
+
+
+
+    </script>
+
+    <h1>HELLO WORLD</h1>
+
+                        <nav id="light" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top" style="background-color:;">
+                            <div class="container-fluid ">
+                                <a href="#" class="navbar-brand text-white"><img src="https://s23.picofile.com/file/8448380850/275782970_1632331783767794_6230544685859472170_n_1_.jpg" style="width:40px;height: 40px;border-radius: 50%;"><button style="margin-left: 10px;width:130px;height:42px ;background-color: white;color:black" type="button" class="btn " data-bs-toggle="offcanvas"  data-bs-target="#gang"><strong><span id="vampiree">Meti Winner</span></strong></button></a>
+                                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#weed">
+                                    <span class="navbar-toggler-icon"></span>
+                                </button>
+                                <div class="collapse navbar-collapse" id="weed">
+                                    <ul class="navbar-nav">
+                                        <li class="nav-item"><a href="#aca" style="transition: 0.6;" class="nav-link text-white text-hover-danger"><span id="star">Project</span></a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Code</span></a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Login</span></a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Shop</span></a></li>
+                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Contact</span></a></li>
+                                        
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </nav>
+                
+
+                        <div style="width:278px" class="offcanvas offcanvas-start" id="gang">
+                            
+                            
+                            
+                            <div class="offcanvas-body" style="background-color: black ;">
+                                
+                                
+                                
+                                
+                                <h1 class="text-primary" style="font-size: 45px;">Welcome!</h1>
+
+                               
+                                <br>
+                                <br>
+
+                                <h5 style="margi:40px" class="text-white mt-1"><i style="color:skyblue;" class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>  Web Designer</strong></h5>
+                                
+                                <br>
+                                <h5 style="margi: 40px" class="text-white mt-"><i style="color:yellow;"  class="fa fa-calendar fa-fw w3-margin-right"></i><strong>    17 Years Old</strong></h5>
+                                
+                                <br>
+                                <h5 style="margi: 40px" class="text-white mt-"><i style="color:red;"  class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>    Education W3school</strong></h5>
+                            
+                                <br>
+                                <h5 class="text-white mt-"><i style="color:limegreen"  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    Tehran</strong></h5>
+                                
+                                <br>   
+                                <h5 class="text-white mt-"><i style="color:blue"  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    09197319201</strong></h5>
+                                
+                                <br>
+                                <h5 class="text-white mt-"><i style="color:purple"  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>meti.winner</strong>
+                                </h5>
+                      
+                                
+                        <div>
+
+                        </div>
+
+                        <div>
+
+                    
+                        <h5 class="text-white mt-5"><i style="color:grey" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>  HTML</h5>
+                        <div class="progress">
+
+                            <div class="progress-bar bg-success progress-bar-animated progress-bar-striped" style="width:90%;color:">90%</div>
+
+                        </div>
+                        <br>
+                        <h5 class="text-white"><i style="color:grey" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>  CSS</h5 >
+                        <div class="progress">
+                            <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
+                        </div>
+                        <br>
+                        <h5 class="text-white"><i style="color:grey" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>   JAVA SCRIPT</h5 >
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:70%;">70%</div>
+                        </div>
+
+                        </div>
+
+                        <br>
+
+
+                        <h5 class="text-white"><i style="color: grey;" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>   BOOTSTRAP 5</h5 >
+                        <div class="progress">
+                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:55%">55%</div>
+                        </div>
+
+
+
+
+
+                        
+              
+                        <br>
+                        <h5 class="text-white"><i style="color: grey;" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>English</h5 >
+                        <div class="progress">
+                        <div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width:75%">75%</div>
+                        </div>
+                        <br>
+                        <h5 class="text-white"><i style="color: grey;" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Persian</h5 >
+
+                        <div class="progress">
+                        <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" style="width:90%">90%</div>
+                        </div>      
+
+                                </div>
+
+                        </div>
+
+                        <div class="container-fluid bg-black">
+        <br>
+                
+                <br>
+                
+
+                         
+
+                            
+                            
+                            <div class="container bg-black">
+                          
+                            
+                            </div>
+                   
+                            <div class="container-fluid bg-black">
+
+                                
+                            </div>
+
+                   
+
+                        <div class="modal fade" id="vampire">
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+
+                                    <div class="modal-header">
+                                        <h3 class="modal-title">Web Designer</h3>
+                                        <button type="button" class="btn-close" data-bs-dismiss="navbar">
+                                    </div>
+
+                                    <div class="modal-body">
+                                        <p>Web designers plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site.</p>
+                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+
+
+                        </div>
+
+
+         <div class="container-fluid bg-black" style="background-color:black;">
+                            <h1 class="mt-3 text-primary " style="text-align: center;font-size: ;"><b>Website</b></h1>
+                            <p style="text-align:center;" class="text-white">I design and develop web pages</p>
+                            <div class="row bg-black">
+
+                                <div class="col-sm-4 mt-4 bg-black cat" style="background-color:black;" style="border-radius: ;">
+                                    <div class="dog" style="opacity: 0.22;background-color: black;"></div>
+                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);;height: 270px;;text-align:center">
+                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlbVtqzsPh1-IxADD-LJf6cFetUOwdNqaWrVVxNINRZQRYoQqAq9umxdlVP5bWGboInc&usqp=CAU" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+                                       <h2 class="text-white" style="">Web Designer</h2>
+                                    <p id="aca" class="p-1 text-white">I'm a creative web Designer with 1 year experience creating and maintaining functional attractive.</p>
+                                    </div>
+                                </div>
+
+        <div class="col-sm-4 mt-4 bg-black cat" style="background-color:black;" style="border-radius: ;">
+                                    <div class="dog" style="opacity: 0.22;"></div>
+                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align:center">
+                                        <img src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-760.jpg
+                                        " style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+                                        
+                                        <h2 class="text-white" style="">Companies</h2>
+                                   <p class="p-1 text-white">Responsive websites for travel companies. Clear understanding of modern technologies & designs</p>
+                                </div>
+                                    
+                                </div>
+                                 <div class="col-sm-4 bg-black  mt-4 cat" style="background-color:black;" style="border-radius: ;">
+                                    <div class="dog" style="opacity: 0.22;"></div>
+                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align:center">
+                                        <img src="https://img.freepik.com/free-vector/html5-programming-internet-website-development-web-application-engineering-script-writing-html-code-optimization-programmer-fixing-bugs_335657-263.jpg" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+                                        
+                                        <h2 class="text-white" style="">Customers</h2>
+                                        
+                        <p class="p-1 text-white">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+                                </div>
+                                    
+                                </div>
+
+                                 <div class="col-sm-4 bg-black mt-4 cat" style="background-color:black;" style="border-radius: ;">
+                                    <div class="dog" style="opacity: 0.2;"></div>
+                                    <div  class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;">
+                                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/concept-of-website-development-and-programming-language-1916383-1632120.png" style="width: 103px;height: 103px;border-radius: 50%;">
+                                        
+
+                                        
+                                        <h3 class="" style="color:white">My Passion</h3>
+
+                                        
+                        <p class="p-1 text-white">My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
+                                </div>
+                                    
+                                </div>
+
+                                 <div class="col-sm-4 mt-4 bg-black cat" style="background-color:whitesmoke;" style="border-radius: ;">
+                                    <div class="dog" style="opacity: 0.2;"></div>
+                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;" id="wee"> 
+                                        <img src="https://png.pngtree.com/png-vector/20210417/ourlarge/pngtree-mobile-network-application-development-png-image_3228759.jpg" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+                                       
+                                        <h3 class="text-white" style="">What I Do</h3>
+                        <p class="p-1 text-white">I help our clients create brands, build digital productsand services, innovate, find opportunities.</p>
+                             </div>
+                                    
+                                </div>
+
+                                 <div class="col-sm-4 bg-black mt-4 cat" style="background-color:whitesmoke;" style="border-radius: ;">
+                                    <div class="dog" style="opacity: 0.2;"></div>
+                                    <div id="BBC" class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;">
+                                        <img src="https://png.pngtree.com/png-vector/20190611/ourlarge/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496210.jpg" style="width: 110px ;height: 110px   ;border-radius: 50%;" class="p-2">
+                    
+                                        <h3 class="text-white" style="">Who Am I</h3>
+
+                        <p class="p-1 text-white">I'm a brilliant web designer and web programmer. When I started building a website I was enthusistic.</p>
+                                </div>
+                                    
+                                </div>
+                                                  
+                            </div>
+                        </div>
+
+<div class="container mt-5 ">
+    <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item " >
+            <a href="#flex" class="nav-link active text-primary" data-bs-toggle="tab">Experience</a>
+        </li>
+        <li class="nav-item  " >
+            <a href="#rap" class="nav-link  text-primary" data-bs-toggle="tab">Career</a>
+        </li>
+    </ul>
+</div>
+
+<div class="tab-content">
+    <div class="container tab-pane active" id="flex">
+        <h1 class="text-primary mt-3">Programmer</h1>
+        <p class="text-white">I gained a lot of experience at that job. I have 1 year experience as a web desinger and web programmer. When I started learning programming, I was very enthusiastic and motivated. I love work with new people all around the world.
+        My career is programming websites and devoloping them. I love my career. I'm very motivated.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+    <div class="container tab-pane fade" id="rap">
+        <h1 class="text-primary mt-3">Career</h1>
+        <p class="text-white">My career is programming websites and devoloping them. I love my career. I'm very motivated.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        My career is programming websites and devoloping them. I love my career. I'm very motivated.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+    </div>
+</div>
+</div>
+
+
+
+
+
+
+                        </body>
+                        </html>
