@@ -1,765 +1,1173 @@
-                        <!DOCTYPE html>
-                        <html>
-                        <head>
-                            <meta charset="utf-8">
-                            <meta name="viewport" content="width=device-width, initial-scale=1">
-                            <title>Meti-Bozorgi</title>
-                            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
-                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-                            <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-                            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meti-Bozorgi</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-                        <style>
-                            #light {
-                                top: -420px;
-                                transition: 1s;
-                            }
+<style>
+	#light {
+		top: -420px;
+		transition: 1s;
+	}
 
-                            #line {
-                                background-color: red;
-                            }
-                            #loose {
-                                text-align: center;
-                                width: 50px;
-                                padding: 10px;
-                                font-size: 30px;
-                                
-                                border-radius: 50%;
-                                background-color: white;
-                                margin: 0 3px;
-                                margin-top: 10px;
-                            }
-                          #loosee {
-                                text-align: center;
-                                width: 50px;
-                                padding: 10px;
-                                font-size: 30px;
-                                border-radius: 50%;
-                                color: white;
-                                background-color: red;
-                                margin: 0 3px;
-                                margin-top: 10px;
-                            }
-                            #loose:hover {
-                                transform: translateY(10px);
-                                transition: 0.6s;
-                            }
-                            #loosee:hover {
-                                transform: translateY(10px);
-                                transition: 0.6s;
-                            }
-                            #looseee:hover {
-                                transform: translateY(10px);
-                                transition: 0.6s;
-                            }
-                            #looseeee:hover {
-                                transform: translateY(10px);
-                                transition: 0.6s;
-                            }
-                            #looseeeee:hover {
-                                transform: translateY(10px);
-                                transition: 0.6s;
-                            }
+	#line {
+		background-color: red;
+	}
+	#loose {
+		text-align: center;
+		width: 50px;
+		padding: 10px;
+		font-size: 30px;
+		
+		border-radius: 50%;
+		background-color: white;
+		margin: 0 3px;
+		margin-top: 10px;
+	}
+  #loosee {
+		text-align: center;
+		width: 50px;
+		padding: 10px;
+		font-size: 30px;
+		border-radius: 50%;
+		color: white;
+		background-color: red;
+		margin: 0 3px;
+		margin-top: 10px;
+	}
+	#loose:hover {
+		transform: translateY(10px);
+		transition: 0.6s;
+	}
+	#loosee:hover {
+		transform: translateY(10px);
+		transition: 0.6s;
+	}
+	#looseee:hover {
+		transform: translateY(10px);
+		transition: 0.6s;
+	}
+	#looseeee:hover {
+		transform: translateY(10px);
+		transition: 0.6s;
+	}
+	#looseeeee:hover {
+		transform: translateY(10px);
+		transition: 0.6s;
+	}
 
-                            #yek:hover {
-                                background-color: red;
-                            }
+	#yek:hover {
+		background-color: red;
+	}
 
-                             #looseee {
-                                text-align: center;
-                                width: 50px;
-                                padding: 10px;
-                                font-size: 30px;
-                                border-radius: 50%;
-                                color: white;
-                                background-color: purple;
-                                margin: 0 3px;
-                                margin-top: 10px;
-                            }       
-                            body {
-                                background-color: whitesmoke;
-                            }
-                            #gss {
-                                animation: forwards infinite alternate;
-                                animation-duration: 1.5s;
-                                animation-name: sfs;
-                            }
-                            @keyframes sfs {
-                                from {opacity: 0;}
-                                to {opacity: 5;}
-                            }
-                            @keyframes sfs {
-                                from {opacity: 0;}
-                                to {opacity: 5;}
-                            }
-                            #ekh {
-                                animation: up-to-down 2s ease-in-out forwards infinite alternate;
-                            }
+	#pie {
+		animation: potato 1s ease-in-out forwards infinite alternate;
+		transform: rotate(-20deg);
+		
+	}
+	@keyframes potato {
+		0% {
+			transform: rotate(20deg);
+		}
+	}
 
-                            @keyframes up-to-down {
-                                0% {
-                                    transform: translateY(20px);
-                                }
-                            }
-                                                   #looseeee {
-                                text-align: center;
-                                width: 50px;
-                                padding: 10px;
-                                font-size: 30px;
-                                color: whitesmoke   ;
-                                background-color: blue ;
-                                margin: 0 3px;
-                                margin-top: 10px;
-                                border-radius: 50%;
-                            } 
-                                                   #looseeeee {
-                                text-align: center;
-                                width: 50px;
-                                padding: 10px;
-                                font-size: 30px;
-                                color: whitesmoke   ;
-                                background-color: blue ;
-                                margin: 0 3px;
-                                border-radius: 50%;
-                                margin-top: 10px;
-                            }       
+	 #looseee {
+		text-align: center;
+		width: 50px;
+		padding: 10px;
+		font-size: 30px;
+		border-radius: 50%;
+		color: white;
+		background-color: red;
+		margin: 0 3px;
+		margin-top: 10px;
+	}       
+	body {
+		background-color: whitesmoke;
+	}
+	#gss {
+		animation: forwards infinite alternate;
+		animation-duration: 1.5s;
+		animation-name: sfs;
+	}
+	@keyframes sfs {
+		from {opacity: 0;}
+		to {opacity: 5;}
+	}
+	@keyframes sfs {
+		from {opacity: 0;}
+		to {opacity: 5;}
+	}
+	#ekh {
+		animation: up-to-down 2s ease-in-out forwards infinite alternate;
+	}
 
-                            #snake {
-                                background-image: url("https://hdwallpaperim.com/wp-content/uploads/2017/08/22/444627-space-Earth.jpg");
-                                border-bottom: 2px solid white;
+	@keyframes up-to-down {
+		0% {
+			transform: translateY(20px);
+		}
+	}
 
-                                
-                                background-repeat: no-repeat;
-                            }          
-                        
+.A {
+position: relative;
+width: 200px;
+background-color: purple;
+height: 40px;
+left: 10px;
+transition: ;
+color: white;
+}
+.B {
+position: absolute;
+color: black;
+left: 0;
+transition: 0.3s;
+right: 100%;
+top: 0;
+bottom: 0;
+background-color: cyan;
+width: 100%;
+text-align: center;
+height: 40px;
+}
+.A:hover .B {
+transition:;
+right: 0;
 
-                            #ooo:hover {
-                                border: 1px solid white;
-                            }
-                            #ay {
-                                animation: up-to-down 1s ease-in-out forwards infinite alternate;
-                            }
-                            @keyframes up-to-down {
-                                100% {
-                                    transform: translateY(10px);
-                                }
-                            }
 
-                            #aek {
-                                border-radius: 20px;
-                            }
-                          
-                            @keyframes left-to-right {
-                                0% {
-                                    transform: translateX(40px);
-                                }
-                            }
+}
+#S:hover .B {
+transition: ;
+right: 0;
+width: 0%;
 
-                        #hooray {
-                            animation: up 2s ease-in-out forwards infinite alternate;
-                        }
-                        @keyframes up {
-                            20% {
-                                transform: translateY(20px);
-                            }
-                        }
-                        #monkey {
-                            animation: right 1s ease-in-out;
-                        }
-                        @keyframes right {
-                            0% {
-                                transform: translateX(-1700px);
-                            }
-                        }
+}
+#S:hover #lobby {
+display: none;
+}
+						   #looseeee {
+		text-align: center;
+		width: 50px;
+		padding: 10px;
+		font-size: 30px;
+		color: whitesmoke   ;
+		background-color: purple ;
+		margin: 0 3px;
+		margin-top: 10px;
+		border-radius: 50%;
+	} 
 
-                        @keyframes left {
-                            0% {    
-                                transform: translateY(-200px);
-                            }
-                        }
- 
 
-                        body {
-                            background-color: white;
-                        }
-                        #BBC:hover {
-                            background-color: black;
-                        }
+#topp {
+position: fixed;
+top: 80%;
+left: 4%;
+cursor: pointer;
+}
+#topp:hover {
+animation: top-to-down 100s ease;
+}
+@keyframes top-to-down {
+0% {
+transform: translateY(4px);
+}
+}
 
-  .rotate:hover {
-    animation: rotate 1s ease-in-out;
-    display: inline-block;
-  }
-  @keyframes rotate {
-    0% {
-        transform: rotate(360deg);
-    }
-  }
 
-  .cheese:hover {
-    animation: rotate 1s ease-in-out;
-    display: inline-block;
-  }
-  @keyframes rotate {
-    0% {
-        transform: rotate(360deg);
-    }
-  }
+						   #looseeeee {
+		text-align: center;
+		width: 50px;
+		padding: 10px;
+		font-size: 30px;
+		color: whitesmoke   ;
+		background-color: purple ;
+		margin: 0 3px;
+		border-radius: 50%;
+		margin-top: 10px;
+	}      
 
+
+
+
+
+	#snake {
+	  
+		
+
+		
+		background-repeat: no-repeat;
+	}          
+
+
+	#ooo:hover {
+		border: 1px solid white;
+	}
+	#ay {
+		animation: up-to-down 1s ease-in-out forwards infinite alternate;
+	}
+	@keyframes up-to-down {
+		100% {
+			transform: translateY(10px);
+		}
+	}
+
+	#nescoffee:hover {
+		color: red;
+		transform: translateY(10px);
+		transition: 0.8s;
+	}
+
+	#aek {
+		border-radius: 20px;
+	}
+  
+	@keyframes left-to-right {
+		0% {
+			transform: translateX(40px);
+		}
+	}
+
+#hooray {
+	animation: up 2s ease-in-out forwards infinite alternate;
+}
+@keyframes up {
+	20% {
+		transform: translateY(20px);
+	}
+}
+#monkey {
+	animation: right 2s ease-in-out;
+	
+}
+@keyframes right {
+	0% {
+		transform: translateX(-500px);
+		
+
+	}
+}
+ #kangoroo {
+	animation: right 3s ease-in-out;
+	
+}
+@keyframes right {
+	0% {
+		transform: translateX(-800px);
+		
+
+	}
+}
+
+
+
+.high {
+animation: down 1s ease-in-out;
+}
+@keyframes down {
+0% {
+transform: translateY(500px);
+}
+}
+
+
+#mad {
+animation: down-to-up 3s ease-in-out;
+}
+
+@keyframes down-to-up {
+from {opacity: 0;}
+to {opacity:600;}
+}
+#pants:hover {
+animation: a 1s ease-in-out forwards infinite alternate;
+transform: rotate(-25deg);
+}
+@keyframes a {
+0% {
+transform: rotate(25deg);
+}
+}
+
+
+@keyframes left {
+	0% {    
+		transform: translateY(-200px);
+	}
+}
+
+
+body {
+	background-color: white;
+}
+#BBC:hover {
+	background-color: black;
+}
+
+
+#brr {
+animation: top-to-down 1s ease-in-out forwards infinite alternate;
+opacity: 5;
+}
+
+@keyframes top-to-down {
+0% {
+transform: translateY(30px);
+opacity: 0;
+}
+}
+
+
+.rotate:hover {
+animation: rotate 1s ease-in-out;
+display: inline-block;
+}
+@keyframes rotate {
+0% {
+transform: rotate(360deg);
+}
+}
+
+.cheese:hover {
+animation: rotate 1s ease-in-out;
+display: inline-block;
+}
+@keyframes rotate {
+0% {
+transform: rotate(360deg);
+}
+}
+#wwww {
+background-color: black;
+color: white;
+border-bottom: 1px solid white;
+}
+#wwww:hover {
+background-color: white;
+color: purple;
+border-bottom: 1px solid white;
+}
+#jjj {
+background-color: black;
+color: white;
+border-bottom: 1px solid white;
+}
+#jjj:hover {
+background-color: white;
+color: purple;
+border-bottom: 1px solid white;
+}
 .cat {
-    position: relative;
+position: relative;
 }
 .dog {
-    left: 0;
-    right: 0;
-    bottom: 100%;
-    width: 100%;
-    height: 0%;
-    position: absolute;
-    color: white;
-    transition: 0.5s;
-    background-color: black;
+left: 0;
+right: 0;
+bottom: 100%;
+width: 100%;
+height: 0%;
+position: absolute;
+color: white;
+transition: 0.5s;
+background-color: black;
 }
 .cat:hover .dog {
-    height: 100%;
-    bottom: 0;
+height: 100%;
+bottom: 0;
 }
-                        a {
-                            text-decoration: none;
-                        }
-                        #light {
-                            animation: down 1s ease-in-out;
-
-                        }
-                        @keyframes down {
-                            0% {
-                                transform: translateY(-50px);
-                            }
-                        }
-                        #gg {
-                            font-size: 14px;
-                        }
-
-                        #star {
-                            font-size: 20px;
-                        }
-
-                        @keyframes up-to-down {
-                            10% {
-                                transform: translateY(30px);
-                            }
-                        }
-                    .checked {
-                        color: orange;
-                    }
-                        h5:hover {
-                        
-                            
-                        }
-
-                        #star:hover {
-                            color: ;
-                        }
-
-                        #star {
-                            animation-name: come;
-                            animation-duration: 1.5s;
-                        }
-                        @keyframes come {
-                            from {opacity: 0;}
-                            to {opacity: 5;}
-                        }
-                        #star:hover {
-                            color: white;
-                            border-bottom: 2px solid white;
-                        }
-
-
-
-                        </style>
-                        </head>
-                        <body class="bg-black">
-
-
-                            
-                        <div class="container-fluid" id="snake" style="height: 1700px;">
-                            <div class="row">
-
-                                <div style="text-align: center;margin-top: 70px" id="monkey">
-                                    <img src="https://s23.picofile.com/file/8448280100/photo_2022_03_11_22_40_35.jpg" style="width:250px;height: 250px;border-radius: 50%;">
-                                    <h1 style="font-size: 45px;" class="mt-3 text-primary"  class="pacc" ><b>Meti Bozorgi</b></h1>
-                                    <br>
-                                    <h4 class="text-danger" id="gss"><b>Freelance Web Designer</b></h4>
-                                    <h5 class="text-white">I'm a creative web Designer with 1 year experience. I design and develop services for customers.</h5>
-
-
-                                    <a id="loose"  href="#" class="fa fa-telegram"></a>
-                                    <a id="loosee" href="#" class="fa fa-youtube"></a>
-                                    <a id="looseee" href="#" class="fa fa-instagram"></a>
-                                 
-                                    <a id="looseeeee" href="#" class="fa fa-github"></a>
-                                </div>
-
-                                        <div class="container " style="margin-top: 140px;">
-                                            <div class="row">
-                                        <div class="col-sm-5">  
-                                        <h1 class="text-primary">About me</h1>
-                                        <p class="text-white">I design and develop
-    services for customers of all sizes, specializing in creating stylish, modern websites. When I started of all sizes, specializing in creating stylish, 
-    modern websites
-    web services and online stores.<br> My passion is to design digital user experiences through the bold interface and meaningful interactions. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><br><br> <button type="button" class="rotate btn text-white " style="background-color:rgb(153, 51, 255)">HIRE ME</button>
-                                <button type="button" class="cheese btn text-white"  style="margin-left: 14px;background-color: rgb(153, 51, 255)">CONTACT</button></p>
-
-    </div>
-    <div class="col-sm-4" style="">
-        <h1 class="text-black">Experience</h1>
-        <p class="text-white"> When I started of all sizes, specializing in creating stylish, modern websites web services and online stores.
-My passion is to design digital user experiences through the bold interface and meaningful interactions. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.<br><br></p>
-        </div>
-    <div class="col-sm-2 mt-3">
-        <h5 class="text-white" class="homie">HTML</h5>            
-        <div class="progress">
-            <div id="ag" class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width:10"></div>
-            </div> 
-                <h5 class="text-white mt-1">CSS</h5>            
-        <div class="progress">
-            <div id="kg" class="progress-bar progress-bar-animated progress-bar-striped bg-success" style=":%;"></div>
-            </div> 
-                <h5 class="text-white mt-1">JAVA SCRIPT</h5>            
-        <div class="progress">
-            <div id="sg" class="progress-bar progress-bar-animated progress-bar-striped bg-warning  " style=":5%;"></div>
-            </div> 
-                <h5 class="text-white mt-1">BOOTSTRAP 5</h5>            
-        <div  class="progress">
-            <div id="mg" class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style=":12%;"></div>
-            </div> 
-
-    </div>
-    <div class="col-sm-1">
-                
-            </div>
-
-    <script>
-    var i = 0;
-
-    if (i == 0) {
-        i = 1;
-            var elemm = document.getElementById("kg");
-        
-        
-        var width = 1;
-        var id = setInterval(frame , 500);
-        function frame() {
-            if (width >= 80) {
-                
-                clearInterval(id);
-                i = 0;
-            } else {
-                width++;
-             
-                elemm.style.width = width + "%";
+a {
+	text-decoration: none;
+}
+
+}
+@keyframes down {
+	0% {
+		transform: translateY(-50px);
+	}
+}
+#reason {
+	animation: left 6s ease-in-out;
+}
+@keyframes left {
+	0% {
+		transform: translateX(-1000px);
+	}
+}
+							#reasonn {
+	animation: right 8s ease-in-out;
+}
+@keyframes right {
+	0% {
+		transform: translateX(-2000px);
+	}
+
+}
+#gg {
+	font-size: 14px;
+}
+
+#star {
+	font-size: 20px;
+}
+
+@keyframes up-to-down {
+	10% {
+		transform: translateY(30px);
+	}
+}
+.checked {
+color: orange;
+}
+
+.checked {
+color: orange;
+}
+#high {
+animation: up-to-down 1s ease-in-out;
+}                
+@keyframes up-to-down {
+0% {
+transform: translateY(-100px);
+}
+}
+h5:hover {
+
+	
+}
+
+#star:hover {
+	color: ;
+}
+
+#star {
+	animation-name: come;
+	animation-duration: 1.5s;
+}
+@keyframes come {
+	from {opacity: 0;}
+	to {opacity: 5;}
+}
+#star:hover {
+	color: white;
+	border-bottom: 2px solid white;
+	background-color
+}
+
+
+#pie:hover {
+	border: 1px solid purple;
+	background-color: white;
+	color: purple;
+}
+
+#psg {
+background-image: url("https://wallpapers.com/images/high/nasa-earth-from-space-z84qztuwyt6v0anb.jpg");
+background-size: 1400px;
+background-repeat: no-repeat;
+
+}
+#starbucks {
+animation: up 2s ease forwards infinite alternate;
+transform: rotate(-20deg);
+
+}
+@keyframes up {
+0% {
+transform: rotate(20deg);
+
+}
+}
+#starbuckss {
+animation: up 2s ease forwards infinite alternate;
+transform: rotate(-20deg);
 
-            
-            }
-        }
-    }
+}
+@keyframes up {
+0% {
+transform: rotate(20deg);
 
-    </script>
+}
 
-    <script>
-    var i = 0;
 
-    if (i == 0) {
-        i = 1;
-        var elem = document.getElementById("ag");
+</style>
+</head>
+<body class="bg-black" >
 
-        var width = 1;
-        var id = setInterval(frame , 400);
-        function frame() {
-            if (width >= 90) {
-                
-                clearInterval(id);
-                i = 0;
-            } else {
-                width++;
-                elem.style.width = width + "%";
 
-            }
-        }
-    }
+	
+<div class="container-fluid" id="snake" style="height: 4
+00px;">
+	
 
-    </script>
+		<div style="text-align: center;margin-top: 50px" >
+			<img id="" class="mt-5" src="https://s23.picofile.com/file/8448280100/photo_2022_03_11_22_40_35.jpg" style="width:300px;height: 300px;border-radius:90%;">
+			<h1 id="" style="font-size: 45px;" class="mt-3 text-primary"  class="" ><b>    <span class="auto-input" style="color:white;background-color: ;box-shadow: 0px 8px 16px 0px rgba(9.9.9.9);"></span></b></h1>
+			<br>
+			<p class="text-white">Freelance Web Designer</p>
+			<div >
+		   
+			</div>
 
-    <script>
-    var i = 0;
 
-    if (i == 0) {
-        i = 1;
-        var elemmm = document.getElementById("sg");
 
-        var width = 1;
-        var id = setInterval(frame , 900);
-        function frame() {
-            if (width >= 65) {
-                
-                clearInterval(id);
-                i = 0;
-            } else {
-                width++;
-                elemmm.style.width = width + "%";
+			<a id="loose" style="background-color:rgb(0, 153, 255) ;color: white;"  href="https://t.me/mehtisupp" class="fa fa-telegram"></a>
+			<a id="loosee" style="background-color: rgb(0, 153, 255);" href="https://youtu.be/VDDwvCpzRWk" class="fa fa-youtube"></a>
+			<a id="looseee" style="background-color: rgb(0, 153, 255);" href="https://www.instagram.com/tv/Cb-c2UzlBl7/?utm_source=ig_web_copy_link" class="fa fa-instagram"></a>
+		 
+			<a id="looseeeee" style="background-color: rgb(0, 153, 255);" href="https://github.com/Mehtisup/Website.git" class="fa fa-github " style="background-color:red"></a>
+		</div>
 
-            }
-        }
-    }
+				
 
-    </script>
 
-    <script>
-    var i = 0;
 
-    if (i == 0) {
-        i = 1;
-        var elemmmmm = document.getElementById("mg");
 
-        var width = 1;
-        var id = setInterval(frame , 900 );
-        function frame() {
-            if (width >= 60) {
-                
-                clearInterval(id);
-                i = 0;
-            } else {
-                width++;
-                elemmmmm.style.width = width + "%";
 
-            }
-        }
-    }
 
-    </script>
+<script>
+var i = 0;
 
+if (i == 0) {
+i = 1;
+var elemm = document.getElementById("kg");
 
 
+var width = 1;
+var id = setInterval(frame , 500);
+function frame() {
+if (width >= 80) {
 
+clearInterval(id);
+i = 0;
+} else {
+width++;
 
+elemm.style.width = width + "%";
 
 
+}
+}
+}
 
+</script>
 
+<script>
+var i = 0;
 
+if (i == 0) {
+i = 1;
+var elem = document.getElementById("ag");
 
+var width = 1;
+var id = setInterval(frame , 400);
+function frame() {
+if (width >= 90) {
 
+clearInterval(id);
+i = 0;
+} else {
+width++;
+elem.style.width = width + "%";
 
+}
+}
+}
 
+</script>
 
+<script>
+var i = 0;
 
+if (i == 0) {
+i = 1;
+var elemmm = document.getElementById("sg");
 
+var width = 1;
+var id = setInterval(frame , 900);
+function frame() {
+if (width >= 65) {
 
+clearInterval(id);
+i = 0;
+} else {
+width++;
+elemmm.style.width = width + "%";
 
+}
+}
+}
 
+</script>
 
+<script>
+var i = 0;
 
+if (i == 0) {
+i = 1;
+var elemmmmm = document.getElementById("mg");
 
+var width = 1;
+var id = setInterval(frame , 900 );
+function frame() {
+if (width >= 60) {
 
+clearInterval(id);
+i = 0;
+} else {
+width++;
+elemmmmm.style.width = width + "%";
 
+}
+}
+}
 
+</script>
 
 
 
 
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </div>
 
 
-    <script>
-    window.onscroll = function() {scrollFunction()};
 
-    function scrollFunction() {
-        if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
-            document.getElementById("light").style.backgroundColor = "rgb(153, 51, 255)  ";
-            document.getElementById("light").style.top = "0";
-            document.getElementById("light").style.display = "block"
 
-        } else {
-            document.getElementById("light").style.backgroundColor = "black";
-            document.getElementById("light").style.display = "none"
-            ;
-            
-        }
-    }
 
 
 
-    </script>
 
-    <h1>HELLO WORLD</h1>
 
-                        <nav id="light" class="navbar navbar-expand-sm navbar-dark bg-primary fixed-top" style="background-color:;">
-                            <div class="container-fluid ">
-                                <a href="#" class="navbar-brand text-white"><img src="https://s23.picofile.com/file/8448380850/275782970_1632331783767794_6230544685859472170_n_1_.jpg" style="width:40px;height: 40px;border-radius: 50%;"><button style="margin-left: 10px;width:130px;height:42px ;background-color: white;color:black" type="button" class="btn " data-bs-toggle="offcanvas"  data-bs-target="#gang"><strong><span id="vampiree">Meti Winner</span></strong></button></a>
-                                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#weed">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="collapse navbar-collapse" id="weed">
-                                    <ul class="navbar-nav">
-                                        <li class="nav-item"><a href="#aca" style="transition: 0.6;" class="nav-link text-white text-hover-danger"><span id="star">Project</span></a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Code</span></a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Login</span></a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Shop</span></a></li>
-                                        <li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Contact</span></a></li>
-                                        
-                                    </ul>
-                                </div>
-                            </div>
 
-                        </nav>
-                
 
-                        <div style="width:278px" class="offcanvas offcanvas-start" id="gang">
-                            
-                            
-                            
-                            <div class="offcanvas-body" style="background-color: black ;">
-                                
-                                
-                                
-                                
-                                <h1 class="text-primary" style="font-size: 45px;">Welcome!</h1>
 
-                               
-                                <br>
-                                <br>
 
-                                <h5 style="margi:40px" class="text-white mt-1"><i style="color:skyblue;" class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>  Web Designer</strong></h5>
-                                
-                                <br>
-                                <h5 style="margi: 40px" class="text-white mt-"><i style="color:yellow;"  class="fa fa-calendar fa-fw w3-margin-right"></i><strong>    17 Years Old</strong></h5>
-                                
-                                <br>
-                                <h5 style="margi: 40px" class="text-white mt-"><i style="color:red;"  class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>    Education W3school</strong></h5>
-                            
-                                <br>
-                                <h5 class="text-white mt-"><i style="color:limegreen"  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    Tehran</strong></h5>
-                                
-                                <br>   
-                                <h5 class="text-white mt-"><i style="color:blue"  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    09197319201</strong></h5>
-                                
-                                <br>
-                                <h5 class="text-white mt-"><i style="color:purple"  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>meti.winner</strong>
-                                </h5>
-                      
-                                
-                        <div>
 
-                        </div>
 
-                        <div>
 
-                    
-                        <h5 class="text-white mt-5"><i style="color:grey" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>  HTML</h5>
-                        <div class="progress">
 
-                            <div class="progress-bar bg-success progress-bar-animated progress-bar-striped" style="width:90%;color:">90%</div>
 
-                        </div>
-                        <br>
-                        <h5 class="text-white"><i style="color:grey" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>  CSS</h5 >
-                        <div class="progress">
-                            <div class="progress-bar bg-primary progress-bar-striped progress-bar-animated" style="width:80%">80%</div>
-                        </div>
-                        <br>
-                        <h5 class="text-white"><i style="color:grey" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>   JAVA SCRIPT</h5 >
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" style="width:70%;">70%</div>
-                        </div>
 
-                        </div>
 
-                        <br>
 
 
-                        <h5 class="text-white"><i style="color: grey;" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>   BOOTSTRAP 5</h5 >
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" style="width:55%">55%</div>
-                        </div>
 
 
 
 
-
-                        
-              
-                        <br>
-                        <h5 class="text-white"><i style="color: grey;" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>English</h5 >
-                        <div class="progress">
-                        <div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width:75%">75%</div>
-                        </div>
-                        <br>
-                        <h5 class="text-white"><i style="color: grey;" class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Persian</h5 >
-
-                        <div class="progress">
-                        <div class="progress-bar progress-bar-animated progress-bar-striped bg-success" style="width:90%">90%</div>
-                        </div>      
-
-                                </div>
-
-                        </div>
-
-                        <div class="container-fluid bg-black">
-        <br>
-                
-                <br>
-                
-
-                         
-
-                            
-                            
-                            <div class="container bg-black">
-                          
-                            
-                            </div>
-                   
-                            <div class="container-fluid bg-black">
-
-                                
-                            </div>
-
-                   
-
-                        <div class="modal fade" id="vampire">
-                            <div class="modal-dialog">
-                                <div class="modal-content">
-
-                                    <div class="modal-header">
-                                        <h3 class="modal-title">Web Designer</h3>
-                                        <button type="button" class="btn-close" data-bs-dismiss="navbar">
-                                    </div>
-
-                                    <div class="modal-body">
-                                        <p>Web designers plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site.</p>
-                                        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
-                                    </div>
-                                </button>
-                            </div>
-                        </div>
-                        </div>
-                        </div>
-
-
-                        </div>
-
-
-         <div class="container-fluid bg-black" style="background-color:black;">
-                            <h1 class="mt-3 text-primary " style="text-align: center;font-size: ;"><b>Website</b></h1>
-                            <p style="text-align:center;" class="text-white">I design and develop web pages</p>
-                            <div class="row bg-black">
-
-                                <div class="col-sm-4 mt-4 bg-black cat" style="background-color:black;" style="border-radius: ;">
-                                    <div class="dog" style="opacity: 0.22;background-color: black;"></div>
-                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);;height: 270px;;text-align:center">
-                                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlbVtqzsPh1-IxADD-LJf6cFetUOwdNqaWrVVxNINRZQRYoQqAq9umxdlVP5bWGboInc&usqp=CAU" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
-                                       <h2 class="text-white" style="">Web Designer</h2>
-                                    <p id="aca" class="p-1 text-white">I'm a creative web Designer with 1 year experience creating and maintaining functional attractive.</p>
-                                    </div>
-                                </div>
-
-        <div class="col-sm-4 mt-4 bg-black cat" style="background-color:black;" style="border-radius: ;">
-                                    <div class="dog" style="opacity: 0.22;"></div>
-                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align:center">
-                                        <img src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-760.jpg
-                                        " style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
-                                        
-                                        <h2 class="text-white" style="">Companies</h2>
-                                   <p class="p-1 text-white">Responsive websites for travel companies. Clear understanding of modern technologies & designs</p>
-                                </div>
-                                    
-                                </div>
-                                 <div class="col-sm-4 bg-black  mt-4 cat" style="background-color:black;" style="border-radius: ;">
-                                    <div class="dog" style="opacity: 0.22;"></div>
-                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align:center">
-                                        <img src="https://img.freepik.com/free-vector/html5-programming-internet-website-development-web-application-engineering-script-writing-html-code-optimization-programmer-fixing-bugs_335657-263.jpg" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
-                                        
-                                        <h2 class="text-white" style="">Customers</h2>
-                                        
-                        <p class="p-1 text-white">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
-                                </div>
-                                    
-                                </div>
-
-                                 <div class="col-sm-4 bg-black mt-4 cat" style="background-color:black;" style="border-radius: ;">
-                                    <div class="dog" style="opacity: 0.2;"></div>
-                                    <div  class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;">
-                                        <img src="https://cdni.iconscout.com/illustration/premium/thumb/concept-of-website-development-and-programming-language-1916383-1632120.png" style="width: 103px;height: 103px;border-radius: 50%;">
-                                        
-
-                                        
-                                        <h3 class="" style="color:white">My Passion</h3>
-
-                                        
-                        <p class="p-1 text-white">My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
-                                </div>
-                                    
-                                </div>
-
-                                 <div class="col-sm-4 mt-4 bg-black cat" style="background-color:whitesmoke;" style="border-radius: ;">
-                                    <div class="dog" style="opacity: 0.2;"></div>
-                                    <div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;" id="wee"> 
-                                        <img src="https://png.pngtree.com/png-vector/20210417/ourlarge/pngtree-mobile-network-application-development-png-image_3228759.jpg" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
-                                       
-                                        <h3 class="text-white" style="">What I Do</h3>
-                        <p class="p-1 text-white">I help our clients create brands, build digital productsand services, innovate, find opportunities.</p>
-                             </div>
-                                    
-                                </div>
-
-                                 <div class="col-sm-4 bg-black mt-4 cat" style="background-color:whitesmoke;" style="border-radius: ;">
-                                    <div class="dog" style="opacity: 0.2;"></div>
-                                    <div id="BBC" class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;">
-                                        <img src="https://png.pngtree.com/png-vector/20190611/ourlarge/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496210.jpg" style="width: 110px ;height: 110px   ;border-radius: 50%;" class="p-2">
-                    
-                                        <h3 class="text-white" style="">Who Am I</h3>
-
-                        <p class="p-1 text-white">I'm a brilliant web designer and web programmer. When I started building a website I was enthusistic.</p>
-                                </div>
-                                    
-                                </div>
-                                                  
-                            </div>
-                        </div>
-
-<div class="container mt-5 ">
-    <ul class="nav nav-tabs" role="tablist">
-        <li class="nav-item " >
-            <a href="#flex" class="nav-link active text-primary" data-bs-toggle="tab">Experience</a>
-        </li>
-        <li class="nav-item  " >
-            <a href="#rap" class="nav-link  text-primary" data-bs-toggle="tab">Career</a>
-        </li>
-    </ul>
+		</div>
+		
+	</div>
+</div>
 </div>
 
-<div class="tab-content">
-    <div class="container tab-pane active" id="flex">
-        <h1 class="text-primary mt-3">Programmer</h1>
-        <p class="text-white">I gained a lot of experience at that job. I have 1 year experience as a web desinger and web programmer. When I started learning programming, I was very enthusiastic and motivated. I love work with new people all around the world.
-        My career is programming websites and devoloping them. I love my career. I'm very motivated.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-    </div>
-    <div class="container tab-pane fade" id="rap">
-        <h1 class="text-primary mt-3">Career</h1>
-        <p class="text-white">My career is programming websites and devoloping them. I love my career. I'm very motivated.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
-        My career is programming websites and devoloping them. I love my career. I'm very motivated.  It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
-    </div>
-</div>
+
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+document.getElementById("light").style.backgroundColor = "rgb(153, 51, 255)  ";
+document.getElementById("light").style.top = "0";
+document.getElementById("light").style.display = "block"
+document.getElementById("light").style.position = "fixed";
+document.getElementById("monkeyy").style.display = "block";
+
+} else {
+document.getElementById("light").style.backgroundColor = "black";
+document.getElementById("light").style.display = "none"
+;
+document.getElementById("monkeyy").style.display = "none"
+
+}
+}
+
+
+
+</script>
+
+
+
+<nav id="high" class="navbar navbar-expand-sm navbar-dark   fixed-top" style="background-color:rgb(0, 122, 204) ;box-shadow: 0px 8px 16px 0px black;">
+	<div class="container-fluid " >
+		<a href="#" class="navbar-brand text-white"><img src="https://s23.picofile.com/file/8448380850/275782970_1632331783767794_6230544685859472170_n_1_.jpg" style="width:40px;height: 40px;border-radius: 50%;">
+
+
+			
+			<button style="margin-left: 10px;width:130px;height:42px ;background-color: white;color:black" type="button" class="btn " data-bs-toggle="offcanvas"  data-bs-target="#gang"><strong><span id="vampiree">Mehti       <span class="badge bg-danger text-white">4</span></span></strong></button>
+
+
+
+		</a>
+		<button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#weed">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="weed">
+			<ul class="navbar-nav">
+				<li class="nav-item"><a href="#aca" style="transition: 0.6;" class="nav-link text-white text-hover-danger"><span id="star">Project</span></a></li>
+				<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star"><span style="transition:0.6s;" id="coco">Code<span style="transition:0.6s;" id="coco"></span></a></li>
+				<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Login</span></a></li>
+				<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Shop</span></a></li>
+				<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Contact</span></a></li>
+				
+			</ul>
+		</div>
+	</div>
+
+</nav>
+
+
+
+<div style="width:278px" class="offcanvas offcanvas-start" id="gang">
+	
+	
+	
+	<div class="offcanvas-body bg-dark">
+		
+		
+		
+		
+		<h1 class="" style="font-size: 45px;color:white">Mehtisup</h1>
+
+	   
+		<br>
+		<br>
+
+		<h5 style="margi:40px" class="text-white mt-1"><i style="color:skyblue;" class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>  Web Designer</strong></h5>
+		
+		<br>
+		<h5 style="margi: 40px" class="text-white mt-"><i style="color:yellow;"  class="fa fa-calendar fa-fw w3-margin-right"></i><strong>    17 Years Old</strong></h5>
+		
+		<br>
+		<h5 style="margi: 40px" class="text-white mt-"><i style="color:red;"  class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>    Education W3school</strong></h5>
+	
+		<br>
+		<h5 class="text-white mt-"><i style="color:limegreen"  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    Tehran</strong></h5>
+		
+		<br>   
+		<h5 class="text-white mt-"><i style="color:blue"  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    09197319201</strong></h5>
+		
+		<br>
+		<h5 class="text-white mt-"><i style="color:purple"  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>mehtisup</strong>
+		</h5>
+
+		
+
+
+
 </div>
 
 
 
 
+ 
+
+	
+	
+	<div class="container bg-black">
+  
+	
+	</div>
+
+	<div class="container-fluid bg-black">
+
+		
+	</div>
 
 
-                        </body>
-                        </html>
+
+<div class="modal fade" id="vampire">
+	<div class="modal-dialog">
+		<div class="modal-content">
+
+			<div class="modal-header">
+				<h3 class="modal-title">Web Designer</h3>
+				<button type="button" class="btn-close" data-bs-dismiss="navbar">
+			</div>
+
+			<div class="modal-body">
+				<p>Web designers plan, create and code internet sites and web pages, many of which combine text with sounds, pictures, graphics and video clips. A web designer is responsible for creating the design and layout of a website or web pages. It and can mean working on a brand new website or updating an already existing site.</p>
+				<button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+			</div>
+		</button>
+	</div>
+</div>
+</div>
+</div>
+
+
+</div>
+
+
+<div class="container-fluid bg-black" style="background-color:black;" >
+	<h1 class="mt-3 text-primary " style="text-align: center;font-size: ;"><b></b></h1>
+	<p style="text-align:center;" class="text-white"></p>
+	<div class="row bg-black">
+
+		<div id=""  class="col-sm-4 mt-4 bg-black cat" style="background-color:black;" style="border-radius: ;" id="you">
+			<div class="dog" style="opacity: 0.22;background-color: black;"></div>
+			<div class=" p-3" style="background-color: rgb(153, 51, 255);;height: 270px;;text-align:center">
+				<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMlbVtqzsPh1-IxADD-LJf6cFetUOwdNqaWrVVxNINRZQRYoQqAq9umxdlVP5bWGboInc&usqp=CAU" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+			   <h2 class="text-white" style="">Web Designer</h2>
+			<p id="aca" class="p-1 text-white">I'm a creative web Designer with 1 year experience creating and maintaining functional attractive.</p>
+			</div>
+		</div>
+
+<div id="" class="col-sm-4 mt-4 bg-black cat" style="background-color:black;" style="border-radius: ;">
+			<div class="dog" style="opacity: 0.22;"></div>
+			<div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align:center">
+				<img src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-760.jpg
+				" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+				
+				<h2 class="text-white" style="">Companies</h2>
+		   <p class="p-1 text-white">Responsive websites for travel companies. Clear understanding of modern technologies & designs.</p>
+		</div>
+			
+		</div>
+		 <div id="" class="col-sm-4 bg-black  mt-4 cat" style="background-color:black;" style="border-radius: ;">
+			<div class="dog" style="opacity: 0.22;"></div>
+			<div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align:center">
+				<img src="https://img.freepik.com/free-vector/html5-programming-internet-website-development-web-application-engineering-script-writing-html-code-optimization-programmer-fixing-bugs_335657-263.jpg" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+				
+				<h2 class="text-white" style="">Customers</h2>
+				
+<p class="p-1 text-white">I design and develop services for customers of all sizes, specializing in creating stylish, modern websites.</p>
+		</div>
+			
+		</div>
+
+		 <div id="" class="col-sm-4 bg-black mt-4 cat" style="background-color:black;" style="border-radius: ;">
+			<div class="dog" style="opacity: 0.2;"></div>
+			<div  class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;">
+				<img src="https://cdni.iconscout.com/illustration/premium/thumb/concept-of-website-development-and-programming-language-1916383-1632120.png" style="width: 103px;height: 103px;border-radius: 50%;">
+				
+
+				
+				<h3 class="" style="color:white">My Passion</h3>
+
+				
+<p class="p-1 text-white">My passion is to design digital user experiences through the bold interface and meaningful interactions.</p>
+		</div>
+			
+		</div>
+
+		 <div id="" class="col-sm-4 mt-4 bg-black cat" style="background-color:whitesmoke;" style="border-radius: ;">
+			<div class="dog" style="opacity: 0.2;"></div>
+			<div class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;" id="wee"> 
+				<img src="https://png.pngtree.com/png-vector/20210417/ourlarge/pngtree-mobile-network-application-development-png-image_3228759.jpg" style="width: 110px;height: 110px;border-radius: 50%;" class="p-2">
+			   
+				<h3 class="text-white" style="">What I Do</h3>
+<p class="p-1 text-white">I help our clients create brands, build digital productsand services, innovate, find opportunities.</p>
+	 </div>
+			
+		</div>
+
+		 <div id="" class="col-sm-4 bg-black mt-4 cat" style="background-color:whitesmoke;" style="border-radius: ;">
+			<div class="dog" style="opacity: 0.2;"></div>
+			<div id="BBC" class=" p-3" style="background-color: rgb(153, 51, 255);height:270px;text-align: center;">
+				<img src="https://png.pngtree.com/png-vector/20190611/ourlarge/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496210.jpg" style="width: 110px ;height: 110px   ;border-radius: 50%;" class="p-2">
+
+				<h3 class="text-white" style="">Who Am I</h3>
+
+<p class="p-1 text-white">I'm a brilliant web designer and web programmer. When I started building a website I was enthusistic.</p>
+		</div>
+			
+		</div>
+						  
+	</div>
+</div>
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+<script>
+var typed = new Typed(".auto-input", {
+strings: ["Mehti Bozorgi"],
+typeSpeed: 100,
+backSpeed: 100,
+loop: true
+})
+
+</script>
+
+
+</div>
+
+
+</div>
+
+</div>
+</div>
+
+<img src="https://cdn.iconscout.com/icon/free/png-256/top-arrow-25-1112318.png" style="display:none;z-index: 99;bottom: 30px;
+left: 20px;cursor: pointer;background-color: white;width: 70px;height: 70px;border-radius: 50%;position: fixed;"  class="dada" id="brr" onclick="topFunction()">
+
+<script>
+var over = document.getElementById("brr");
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+over.style.display = "block";
+} else {
+over.style.display = "none";
+}
+}
+
+function topFunction() {
+document.body.scrollTop = 0;
+document.documentElement.scrollTop = 0;
+}
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+<div class="container-fluid bg-white mt-5">
+<div class="row bg-black">
+<div class="col-sm-14 mt-2">
+<h1 class="text-white   ">I Am Freelancer Web Designer & Devoloper </h1>
+<p class="text-white    ">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock not simply random text. of construction works. Our certified team provides the services in time and on the highest level.
+
+
+Construction
+Buildwall is completely client-oriented company. We are able meet schedule deadlines with top quality<br>  
+
+<br>
+<br>
+
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chicago" id="pants">HIRE ME</button><span style="color: black">__</span><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chicago" id="pants">CONTACT</button>
+
+<br>
+<br>
+
+
+
+
+</div>
+
+
+
+
+</div>
+
+<div class="row  bg-black ">
+<div class="col-sm-5">
+<h1 class="text-white">About Me</h1>
+<p class="text-white mt-3" style="font-size:">Name : Mehti             </p>
+<p class="text-white" style="font-size:">Last Name : Bozorgi               </p>
+<p class="text-white" style="font-size:">Age : 17                  </p>
+<p class="text-white" style="font-size:">City : New York</p>
+<p class="text-white" style="font-size:"> Gmail : Mehtisup</p>
+<p class="text-white" style="font-size:">Country : United State</p>
+<p class="text-white" style="font-size:">Job : Web Designer & Programmer</p><br> 
+
+
+
+
+
+</p>
+
+</div>
+<div class="col-sm-3">
+<h3 class="text-white">HTML</h3>
+<div class="progress bg-black">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-success" style="width:90%;height: 14px;"></div>
+</div>
+<br>
+<h3 class="text-white">CSS</h3>
+<div class="progress bg-black">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width:80%;height: 14px;"></div>
+</div><br>
+<h3 class="text-white">JAVASCRIPT</h3>
+<div class="progress bg-black">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-warning" style="width:50%;height: 14px;"></div>
+</div>
+
+</div>
+<div class="col-sm-1">
+<h1 style="color:black">HELLO</h1>
+</div>
+<div class="col-sm-3">
+<h3 class="text-white">BOOTSTRAP 5</h3>
+<div class="progress bg-black">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-primary" style="width:75%;height: 14px;"></div>
+</div>
+<br>
+<h3 class="text-white">JQUERY</h3>
+<div class="progress bg-black">
+<div class="progress-bar progress-bar-animated progress-bar-striped bg-danger" style="width:20%;height: 14px;"></div>
+</div><br>
+<h3 class="text-black">ENGLISH</h3>
+
+
+</div>
+</div>
+
+
+<div class="container-fluid mt-5" style="background-color:white;">
+<div class="container">
+<div class="row" style="text-align: center;">
+<div id="S" class="col-sm-4 bg-white text-white p-3" style="">
+<div class="bg-black" style="box-shadow: 0px 8px 16px 0px rgba(0.0.0.2);">
+<img src="https://s.tmimgcdn.com/scr/400x250/55700/drugster-opencart-template_55729-2-original.jpg " style="width:100%;height: 200px;">
+<p  class="text-white p-2" style="margin-left: 5px;text-align:left"><span style="color:white"></span>Programming Language - Website</p>
+
+<p class="text-white p-2" style="margin-left: 5px;font-size:15px;text-align: left;;" style="text-align:left"><span style="color: white"></span>By Mehti <span style="font-size: 20px">$ 4.00  <div class="A" style="text-align: center;font-size: 30px;">
+
+<div class="B" ><h4 style="text-align: center;font-size: 30px;"><span id="lobby">Buy</span><span id="lobby"><i class="fa fa-cart-arrow-down"></i></span></h4></div>
+<h4 style="text-align: center;font-size: 30px;">Buy<i class="fa fa-cart-arrow-down"></i></h4>
+</div><span style="font-size: 25px"> <span style="color: black">SJF</span></p>
+
+
+
+
+
+
+
+
+</div>
+</div>
+<div id="S" class="col-sm-4 bg-white text-white p-3" style="">
+<div class="bg-black" style="box-shadow: 0px 8px 16px 0px rgba(0.0.0.2);">
+<img src="https://s.tmimgcdn.com/scr/400x250/55700/drugster-opencart-template_55729-2-original.jpg " style="width:100%;height: 200px;">
+<p  class="text-white p-2" style="margin-left: 5px;text-align:left"><span style="color:white"></span>Programming Language - Website</p>
+
+<p class="text-white p-2" style="margin-left: 5px;font-size:15px;text-align: left;;" style="text-align:left"><span style="color: white"></span>By Mehti <span style="font-size: 20px">$ 4.00  <div class="A" style="text-align: center;font-size: 30px;">
+
+<div class="B" ><h4 style="text-align: center;font-size: 30px;"><span id="lobby">Buy</span><span id="lobby"><i class="fa fa-cart-arrow-down"></i></span></h4></div>
+<h4 style="text-align: center;font-size: 30px;">Buy<i class="fa fa-cart-arrow-down"></i></h4>
+</div><span style="font-size: 25px"> <span style="color: black">SJF</span></p>
+
+
+
+
+
+
+
+</div>
+
+</div>
+
+<div id="S" class="col-sm-4 bg-white text-white p-3" style="">
+<div class="bg-black" style="box-shadow: 0px 8px 16px 0px rgba(0.0.0.2);">
+<img src="https://s.tmimgcdn.com/scr/400x250/55700/drugster-opencart-template_55729-2-original.jpg " style="width:100%;height: 200px;">
+<p  class="text-white p-2" style="margin-left: 5px;text-align:left"><span style="color:white"></span>Programming Language - Website</p>
+
+<p class="text-white p-2" style="margin-left: 5px;font-size:15px;text-align: left;;" style="text-align:left"><span style="color: white"></span>By Mehti <span style="font-size: 20px">$ 4.00  <div class="A" style="text-align: center;font-size: 30px;">
+
+<div class="B" ><h4 style="text-align: center;font-size: 30px;"><span id="lobby">Buy</span><span id="lobby"><i class="fa fa-cart-arrow-down"></i></span></h4></div>
+<h4 style="text-align: center;font-size: 30px;">Buy<i class="fa fa-cart-arrow-down"></i></h4>
+</div><span style="font-size: 25px"> <span style="color: black">SJF</span></p>
+
+
+
+
+
+
+
+
+</div>
+<br>
+<br>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="container-fluid bg-black p-4 mt-3 " style="text-align:center">
+<img src="https://livedemo00.template-help.com/wt_50638/img/tab_icon2.png"><span style="color:black">______</span><img src="https://livedemo00.template-help.com/wt_50638/img/tab_icon3.png"><span style="color:black">______</span><img src="https://livedemo00.template-help.com/wt_50638/img/tab_icon5.png"><span style="color:black">______</span><img src="https://livedemo00.template-help.com/wt_50638/img/tab_icon1.png">
+</div>
+
+<div class="container-fluid bg-white">
+<div id="sea" class="carousel slide" role="ride">
+<div class="carousel-indicators">
+<button type="button" class="active" data-bs-target="#sea" data-bs-slide-to="0"></button>
+<button type="button" data-bs-target="#sea" data-bs-slide-to="1"></button>
+<button type="button" data-bs-target="#sea" data-bs-slide-to="2"></button>
+</div>
+<div class="carousel-inner">
+<div class="carousel-item active">
+<div class="row" style="text-align:center">
+<div class="col-sm-4  bg-white p-3">
+<img src="data:image/jpeg;base64,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" style="width:200px;height: 200px;border-radius: 50%;">
+<h3 class="text-black mt-3" style="text-align:center">About Us</h3 class="text-black"> 
+<p>We specialize in all kinds of construction works. Our certified team provides the services in time and on the highest level.</p>
+</div>
+<div class="col-sm-4  bg-white p-3">
+<img src="https://ld-wp73.template-help.com/buildwall/v3/default/wp-content/uploads/2019/07/home-box-image-2.jpg    " style="width:200px;height: 200px;border-radius: 50%;">
+<h3 class="text-black mt-3" style="text-align:center">Construction</h3 class="text-black"> 
+<p>Buildwall is completely client-oriented company. We are able meet schedule deadlines with top quality.</p>
+</div>
+<div class="col-sm-4 bg-white p-3">
+<img src="https://ld-wp73.template-help.com/buildwall/v3/default/wp-content/uploads/2019/07/home-box-image-3.jpg" style="width:200px;height: 200px;border-radius: 50%;">
+<h3 class="text-black mt-3" style="text-align:center">Effective Teamwork</h3 class="text-black"> 
+<p>We have a very good team-based and teamwork attitude, working together to find the best solutions.</p>
+</div>
+</div>
+</div>
+
+
+
+
+</div>
+<button type="button" class="carousel-control-prev" data-bs-target="#sea" data-bs-slide="prev">
+<span class="carousel-control-prev-icon"></span>
+</button>
+<button type="button" class="carousel-control-next" data-bs-target="#sea" data-bs-slide="next">
+<span class="carousel-control-next-icon"></span>
+</button>
+</div>
+
+
+
+<div class="modal" id="chicago">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<div class="modal-title">
+<h1>HELLO WORLD</h1>
+</div>
+</div>
+
+<div class="modal-body">
+<p>What can I do for you?</p>
+</div>
+</div>
+</div>
+</div>
+
+
+</body>
+</html>
