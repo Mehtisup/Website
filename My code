@@ -530,6 +530,27 @@
 				#BBC:hover {
 					background-color: black;
 				}
+				#la {
+
+				}
+				#pp {
+					position:relative;
+				}
+				#ggg {
+					left:0;
+					top: 0;
+					right:0;
+					bottom:0;
+					position: absolute;
+					width:100%;
+					height:100%;
+					transition: 0.6s;
+					transform:scale(0);
+				}
+				#pp:hover #ggg {
+					transform: scale(1);
+				}
+
 
 
 				#brr {
@@ -565,6 +586,32 @@
 				}
 				}
 
+				#niggaa {
+					position:relative;
+				}
+				#hop {
+					left:0;
+					right: 0;
+					bottom:100%;
+					top:0;
+					width:100%;
+					height:0%;
+					background-color: red;
+					color: white;
+					transition: 0.5s;
+					
+				}
+				#niggaa:hover #hop {
+					height: 8%;
+					bottom: 0;
+					transition: 0.5s;
+				}
+				#steal {
+					display: none;
+				}
+				#niggaa:hover #steal {
+					display: block;
+				}
 
 				.rotate:hover {
 				animation: rotate 1s ease-in-out;
@@ -788,7 +835,7 @@
 					
 
 						<div style="text-align: center;margin-top: 50px"  >
-							<img id="face" class="mt-5" src="https://s22.picofile.com/file/8449734668/20220505_222603.jpg"
+							<img id="face" class="mt-5" src="https://s23.picofile.com/file/8449825168/PicsArt_05_08_11_19_10.jpg"
 							" style="width:300px;height: 300px;border-radius:90%;">
 							<h1 id="fastcar" style="font-size: 45px;" class="mt-3 text-primary"  class="" ><b>    <span class="auto-input" style="color:white;background-color: ;box-shadow: 0px 8px 16px 0px rgba(9.9.9.9);"></span></b></h1>
 							<br>
@@ -1262,6 +1309,8 @@
 
 
 				</div>
+			
+
 
 
 				<div class="container-fluid bg-white mt-5">
@@ -1339,8 +1388,11 @@
 				</div>
 
 			<div class="container bg-white p-5" style="text-align: center;">
+			<h1 class="text-black">My Blog</h1>
+			<p   class="text-black col-sm-">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut
+labore et d magna aliqua enim sed do sit.</p>
 			<div class="row mt-3">
-			<div class="col-sm-4 bg-white p-2" id="law">
+			<div class="col-sm-4 bg-white p-2" id="niggaa">
 			<div class="love"></div>
 			<img src="https://static.vecteezy.com/ti/vettori-gratis/p1/2099443-codice-di-programmazione-codifica-o-hacker-background-codice-di-programmazione-icona-realizzato-con-codice-binario-dati-binari-digitali-e-codice-digitale-streaming-vettoriale.jpg" style="width:100%;height:190px">
 			<h4 class="text-white p-4" style="background-color:black;">Website Number 1<br><span style="font-size:15px" >Price: 10$     <i class="fa fa-star checked"></i>
@@ -1349,26 +1401,33 @@
 			<i class="fa fa-star "></i>
 			<i class="fa fa-star "></i></span><br><br><button id="heh" style="width:100px;background-color: rgb(255, 0, 0);" type="button" class="btn text-white"><b>
 				Buy</b></button>	</h4>	
+				<div id="hop"><h4 class="text-" id="steal">50% OFF</h4></div>
+				
 			</div>	
-			<div class="col-sm-4 bg-white p-2" id="">
+			<div class="col-sm-4 bg-white p-2" id="niggaa">
 			<img src="https://images.all-free-download.com/images/graphiclarge/software_development_and_coding_programming_of_concept_data_processing_computer_code_with_window_interface_flat_isometric_illustration_6844797.jpg" style="width:100%;height: 190px;">	
-
+			
+			
 			<h4  class="text-white bg-black p-4">Website Number 2<br><span style="font-size:15px" >Price: 17$      <i class="fa fa-star checked"></i>
 			<i class="fa fa-star checked"></i>
 			<i class="fa fa-star checked"></i>
 			<i class="fa fa-star checked"></i>
 			<i class="fa fa-star "></i></span><br><br><button id="heh" style="width:100px;background-color: rgb(255, 0, 0);" type="button" class="btn text-white"><b>
 				Buy</b></button>	</h4>
-
+				<div id="hop"><h4 class="text-" id="steal">50% OFF</h4></div>
+				
 			</div>	
-			<div class="col-sm-4 bg-white p-2" id="">
+			<div class="col-sm-4 bg-white p-2" id="niggaa">
 				<img src="https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg" style="width:100%;height: 190px;">	
-			<h4 class="text-white bg-black p-4">Website Number 3<br><span style="font-size:15px" >Price: 7$     <i class="fa fa-star checked"></i>
+				
+				<h4 class="text-white bg-black p-4">Website Number 3<br><span style="font-size:15px" >Price: 7$     <i class="fa fa-star checked"></i>
 			<i class="fa fa-star checked"></i>
 			<i class="fa fa-star checked"></i>
 			<i class="fa fa-star checked"></i>
 			<i class="fa fa-star "></i></span><br><br><button id="heh" style="width:100px;background-color: rgb(255, 0, 0);" type="button" class="btn text-white"><b>
 				Buy</b></button>	</h4>	
+				<div id="hop"><h4 class="text-" id="steal">50% OFF</h4></div>
+				
 			</div>		
 			</div>	
 			</div>
@@ -1406,11 +1465,11 @@
 				</div>
 				</div>
 
-				<div class="container-fluid bg-blackt-5 mt-5">
+				<div style="text-align: ;" class="container-fluid bg-blackt-5 mt-5">
 				<ul  class="nav nav-pills" role="tablist">
-					<li  class="nav-item text-white active"><a style="color:" href="#meti" class="nav-link active" data-bs-toggle="pill">HTML</a></li>
-					<li class="nav-item active"><a style="color:" href="#jack" class="nav-link" data-bs-toggle="pill">JAVA SCRIPT</a></li>
-					<li class="nav-item active"><a style="color:" href="#pack" class="nav-link" data-bs-toggle="pill">CSS</a></li>
+					<li style="border-radius:10px;margin-left:px;background-color:red;color:white"  class="nav-item text-white "><a style="color:;border-radius: 10px;background-color: ;" href="#meti" class="nav-link text-white	 active" data-bs-toggle="pill">HTML</a></li>
+					<li style="border-radius: 10px;margin-left: 15px;background-color:red;color:white" class="nav-item "><a style="border-radius:10px;" href="#jack" class="nav-link text-white" data-bs-toggle="pill">JAVA SCRIPT</a></li>
+					<li style="border-radius:10px;margin-left:15px;background-color:red;color:white" class="nav-item "><a style="color:;border-radius: 10px;" href="#pack" class="nav-link text-white" data-bs-toggle="pill">CSS</a></li>
 				</ul>	
 				</div>
 
@@ -1461,28 +1520,28 @@
 				<br>
 				<br>
 				
-				<div class="container-fluid p-5">
+				<div class="container-fluid bg-success p-5">
 
 			<div class="row">
-				<div class="col-sm-3 bg-black p-2">
+				<div class="col-sm-3 bg-success p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Project Awards   <br> <span style="color:blueviolet"><b>23</b></span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>    
 				<div id="pain">
-					<h4 class="text-black mt-3">Project Awards</h4>
+					<h4 class="text-success mt-3">Project Awards</h4>
 					<button type="button" class="btn mt-2" style="background-color: red;color:white">Projects</button></div>    
 			</div>    
 			</div>
-			<div class="col-sm-3 bg-black p-2">
+			<div class="col-sm-3 bg-success p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Happy Clients  <br> <span style="color:blueviolet"><b>13</b></span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>
 				<div id="pain">
-					<h4 class="text-black mt-3">Happy Clients</h4>
+					<h4 class="text-success mt-3">Happy Clients</h4>
 					<button type="button" class="btn mt-2" style="background-color: red;color:white">Clients</button></div>    
 			</div>    
 			</div>
-			<div class="col-sm-3 bg-black p-2">
+			<div class="col-sm-3 bg-success p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Total Reviews   <br> <span style="color:blueviolet"><b>40</b></span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>  
@@ -1492,7 +1551,7 @@
 			</div>  
 			</div>    
 			</div>
-			<div class="col-sm-3 bg-black p-2">
+			<div class="col-sm-3 bg-success p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Active Users  <br> <span style="color:blueviolet"><b>103</b></span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>
@@ -1507,6 +1566,9 @@
 			</div>
 				<br>
 				<h1 class="text-white" style="text-align:center">Programming Languages</h1>
+				<p style="text-align:center" class="text-white">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua enim sed do sit.
+
+</p>
 				<br>
 
 					
@@ -1587,18 +1649,21 @@
 			<button type="button" data-bs-slide-to="1" data-bs-target="#dope"></button>  
 			<button type="button" data-bs-slide-to="2" data-bs-target="#dope"></button>
 			</div>    
-			<div class="carousel-inner">
-			<div class="carousel-item active">
+			<div  class="carousel-inner">
+			<div id="pp" class="carousel-item active">
 			<img src="https://www.tutorialrepublic.com/lib/images/javascript-illustration.png" class="d-block w-100 " style="height:200px;width:%;
-			height:;">    
+			height:;">   
+			<div id="ggg"></div> 
 			</div>    
-			<div class="carousel-item ">
+			<div id="pp" class="carousel-item ">
 			<img src="https://www.tutorialrepublic.com/lib/images/html-illustration.png" class="d-block w-100 " style="height: 200px;width:%;
-			height:;">    
+			height:;"> 
+			<div id="ggg"></div>   
 			</div>    
-			<div class="carousel-item ">
+			<div id="pp" class="carousel-item ">
 			<img src="https://www.tutorialrepublic.com/lib/images/css-illustration.png" class="d-block w-100 " style="height: 200px;width:%;
-			;">    
+			;">  
+			<div id="ggg"></div>  
 			</div>  
 			<button type="button" class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#dope">
 			<span class="carousel-control-prev-icon"></span>    
@@ -1630,13 +1695,15 @@
 
 			<div class="container mt-5">
 				<h1 class="text-white" style="text-align:center">Our Colleagues</h1>
+				<p style="text-align:center
+				" class="text-white">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua enim sed sldkjfla lkasjfl sfmpor incididunt ut labore et d magna aliqua enim sed do sit.</p>
 				<br>
 				<div class="row" style="text-align: center;">
 					<div  id="crazy" class="col-sm-5 p-3 bg-white">
 						
 						<img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_96211011_2000134813806405780_414357.jpg" style="width:180px;height:180px;border-radius:50%">
 						<h1 class="text-black">Stive Jobs</h1>
-						<p>Stive jobs is my idol. He is best man in the technology world. I love him. I'm ambitous person. I've always set myself goals. More than too.</p>
+						<p>Stive jobs is my idol. He  is best man in the technology world. I love him. I'm ambitous person. I've always set myself goals. More than too.</p>
 						<div class="container" id="fame">
 							<h1 class="mt-3" id="pantss" style="padding:4px"><i class="fa fa-telegram"></i>      Telegram</h1>
 							<br>
@@ -1659,7 +1726,7 @@
 						</div>
 					</div>
 					
-					<div style="" id="" class="col-sm-2 p-3 bg-black">
+					<div style="" id="" class="col-sm-2 ANd9GcSMlbVtqzsPh1-IxADD-LJf6cFetUOwdNqaWrVVxNINRZQRYoQqAq9umxdlVP5bWGboInc bg-black">
 						<h1 style="display: none;">HELLO WORLD</h1>
 					</div>
 					<div  id="crazy" class="col-sm-5 p-3 bg-white">
@@ -1690,6 +1757,36 @@
 					</div>
 				</div>
 			</div>
+
+<div class="container-fluid bg-dark mt-5 p-5">
+<div class="row">
+<div class="col-sm-3">
+<h1 class="text-white" style="border-bottom: ;1px solid red">Mehti$up</h1>
+<br>	
+<p class="text-white">  eiusmod tempor incididunt ut labore et d magna aliqua enim sed sldkjfla lkasjfl sfmpor incididunt ut labore et d magna aliqua enim sed do si</p><a id="loose" style="background-color:red ;color: white;"  href="https://t.me/mehtisupp" class="fa fa-telegram"></a>
+							<a id="loosee" style="background-color: red;" href="https://youtu.be/VDDwvCpzRWk" class="fa fa-youtube"></a>
+							<a id="looseee" style="background-color:red;" href="https://www.instagram.com/tv/Cb-c2UzlBl7/?utm_source=ig_web_copy_link" class="fa fa-instagram"></a>
+						
+							<a id="looseeeee" style="background-color: red;" href="https://github.com/Mehtisup/Website.git" class="fa fa-github " style="background-color:red"></a>
+</div>
+<div class="col-sm-1 bg-dark"><p class="text-dark">SKLJDF</p></div>
+<div class="col-sm-3">
+<h1 class="text-white">Information</h1>
+<br>
+<p class="text-white">Address: USA , New York City, Paris Street, Gang Alley, Number24, Floor 4</p>
+<p class="text-white">Phone Number: +98 9197319201</p>
+<p class="text-white">Gmail: Mehtisup@gmail.com</p>
+</div>	
+<div class="col-sm-1 bg-dark"><p class="text-dark">SKLJDF</p></div>
+<div class="col-sm-3">
+<h1 class="text-white">Newsletter</h1>
+<br>
+<input type="text" placeholder="Enter" style="padding: 6px;"><br><br>
+<button type="button" class="btn btn-primary">Send</button>
+</div>
+
+</div>	
+</div>
 
 
 				</body>
