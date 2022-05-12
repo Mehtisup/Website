@@ -28,6 +28,7 @@
 			#as {
 			background-color: black;
 			color:white;
+			color;
 			border-right: 6px solid white;
 			position: relative;
 			;
