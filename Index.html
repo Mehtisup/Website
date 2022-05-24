@@ -2,6 +2,7 @@
 
 
 
+
 				<!DOCTYPE html>
 				<html>
 				<head>
@@ -12,8 +13,25 @@
 					<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 					<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
 					<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+					<meta name="theme-color" content="black">
+					
 				<style>
+					#RIP {
+						position: relative;
+					}
+					#rip {
+						left: 0;
+						right:0;
+						top:0;
+						bottom:0;
+						width: 100%;
+						height: 100%;
+						background-color: purple;
+						transform: scale(0);
+					}
+					#RIP:hover #rip {
+						transform: scale(1)			;
+					}
 					#high {
 						animation: bottom 1s ease-in-out;
 					}
@@ -28,7 +46,6 @@
 			#as {
 			background-color: black;
 			color:white;
-			color;
 			border-right: 6px solid white;
 			position: relative;
 			;
@@ -283,6 +300,31 @@
 					
 				}
 
+
+
+
+				#clash {
+					position:relative;
+					
+				}
+				#cash {
+					left:0;
+					right:0;
+					transition: 0.6s;
+					top: 0;
+					position: absolute;
+					bottom:0;
+					width:100%;
+					height:100%;
+					background-color:white;
+					transform:scale(0);
+				}
+				#clash:hover #cash {
+					transform: scale(1);
+					transition: 0.6s;
+					color: black;
+				}
+
 				#soso {
 					height: 1400px;
 					background-color: purple;
@@ -507,7 +549,7 @@
 				}
 				#pants:hover {
 				animation: a 1s ease-in-out forwards infinite alternate;
-				transform: rotate(-25deg);
+				transform: translateY(10px)
 				}
 				@keyframes a {
 				0% {
@@ -534,8 +576,12 @@
 					position:absolute;
 					width:100%;
 					height: 100%;
+					transform: scale(0)
 					background-color: ;
 
+				}
+				#list:hover #end {
+					transform: scale(1);
 				}
 
 
@@ -564,6 +610,28 @@
 				}
 				#pp:hover #ggg {
 					transform: scale(1);
+				}
+
+				#long {
+					position:relative;
+			
+				}
+				#bong {
+					left:0;
+					right:0;
+					top:0;
+					transition: 0.5s;
+					bottom:0;
+					position:absolute;
+					background-color: red;
+					color:black;
+					width:100%;
+					height:100%;
+					transform:scale(0);
+				}
+				#long:hover #bong {
+					transform: scale(1);
+					transition: 0.5s;
 				}
 
 
@@ -624,13 +692,21 @@
 				#niggaa:hover #steal {
 					transition: 0.6s;
 				}
+				
 				#steal {
-					display: none;
-					transition: 0.6s;
+					left:0;
+					right:0;
+					top:0;
+					bottom:0;
+					position: absolute;
+					background-color: green;
+					transform:scale(0);
+					
+					
 				}
 				#niggaa:hover #steal {
-					display: block;
-					transition: 0.6s;
+				transform: scale(1);
+					
 				}
 				#niggaa:hover #dick 
 
@@ -643,6 +719,7 @@
 				transform: rotate(360deg);
 				}
 				}
+
 
 				.cheese:hover {
 				animation: rotate 1s ease-in-out;
@@ -695,7 +772,7 @@
 				background-color: black;
 				}
 				#list {
-					background-color: green;
+					background-color: red;
 				}
 				#ding:hover {
 					animation: top 1s ease-in-out;
@@ -750,6 +827,7 @@
 						transform: translateY(30px);
 					}
 				}
+
 
 
 				#sd {
@@ -859,8 +937,7 @@
 					
 
 						<div style="text-align: center;margin-top: 50px"  >
-							<img id="face" class="mt-5" src="https://s23.picofile.com/file/8448279868/photo_2022_03_11_02_25_15.jpg"
-							" style="width:300px;height: 300px;border-radius:90%;">
+							<img id="face" class="mt-5" src="https://lh3.googleusercontent.com/a-/AOh14Gjl-1FWQwpQqhimmarA0A4BenpYthbPLoPpA3gh=s288-p-rw-no" style="width:300px;height: 300px;border-radius:90%;">
 							<h1 id="fastcar" style="font-size: 45px;" class="mt-3 text-primary"  class="" ><b>    <span class="auto-input" style="color:white;background-color: ;box-shadow: 0px 8px 16px 0px rgba(9.9.9.9);"></span></b></h1>
 							<br>
 							<p id="dj" class="text-white">Freelance Web Designer With 1 Year Experience In Designing Websites</p>
@@ -1046,16 +1123,16 @@
 
 
 
-				<nav id="high" class="navbar navbar-expand-sm navbar-dark   fixed-top" style="background-color:black ;box-shadow: 0px 8px 16px 0px black;">
+				<nav id="high" class=" navbar navbar-expand-md navbar-dark   fixed-top" style="background-color:black ;box-shadow: 0px 8px 16px 0px black;">
 					<div class="container-fluid " >
 
 						<a href="#" class="navbar-brand text-white"><img src="https://s22.picofile.com/file/8449261242/IMG_20220417_194722_921.jpg" style="width:40px;height: 40px;border-radius: 50%;">
 
 
 							
-							<button style="margin-left: 10px;width:130px;height:42px ;background-color: red;color:white" type="button" class="btn " data-bs-toggle="offcanvas"  data-bs-target="#gang" ><strong><span id="vampiree">Mehti$up       <span class="badge bg-danger text-white"></span></span></strong></button><i data-bs-toggle="modal" data-bs-target="#tony" style="margin-left: 25px;" class="fa fa-search"></i>
+							<button id="clash"  style="margin-left: 10px;width:130px;height:42px ;background-color: red;color:white" type="button" class="btn " data-bs-toggle="offcanvas"  data-bs-target="#gang" ><b>Mehti$up</b><strong><span id="vampiree">     <span class="badge bg-danger text-white"></span></span></strong></button><i id="roll" data-bs-toggle="modal" data-bs-target="#tony" style="margin-left: 25px;" class="fa fa-search"></i>
+								
 							
-
 
 
 						</a>
@@ -1066,9 +1143,11 @@
 							<ul class="navbar-nav">
 								
 								<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star"><span style="transition:0.6s;" id="iff">Code<span style="transition:0.6s;" id="coco"></span></a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Login</span></a></li>
-								<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Shop</span></a></li>
+								<li class="nav-item"><a href="login.html" class="nav-link text-white"><span id="star">Login</span></a></li>
+								<li class="nav-item"><a href="shop.html" class="nav-link text-white"><span id="star">Shop</span></a></li>
 								<li class="nav-item"><a href="#" class="nav-link text-white"><span id="star">Contact</span></a></li>
+								 
+   
 								
 							</ul>
 						</div>
@@ -1078,7 +1157,7 @@
 
 
 
-				<div style="width:278px" class="offcanvas offcanvas-start" id="gang">
+				<div style="width:278px;cursor: pointer;" class="offcanvas offcanvas-start" id="gang">
 					
 					
 					
@@ -1087,40 +1166,60 @@
 						
 						
 						
-						<h1 class="" style="font-size: 45px;color:white">Mehtisup</h1>
+						<h1 class="" style="font-size: 45px;color:white">Mehti$up</h1>
 
 					
 						<br>
 						<br>
 
-						<h5 style="margi:40px" class="text-white mt-1"><i style="color:skyblue;" class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>  Web Designer</strong></h5>
+						<h5 style="margi:40px" class="text-white mt-1 " data-bs-target="#dollor" data-bs-toggle="collapse" ><i style="color:skyblue;" class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>  Web Designer</strong>      <i style="color" class="fa fa-arrow-down"></i></h5>
+						<div  id="dollor" class="collapse">
+							
+						<h5 style="margi:40px" class="text-white mt-1 "  ><strong>HTML</strong></h5>
+						<h5 style="margi:40px" class="text-white mt-1 "  ><strong>CSS</strong></h5>
+						<h5 style="margi:40px" class="text-white mt-1 "  ><strong>JAVASCRIPT</strong></h5>
+						<h5 style="margi:40px" class="text-white mt-1 "  ><strong>BOOTSTRAP 5</strong></h5>
+					</div>
 						
-						<br>
-						<h5 style="margi: 40px" class="text-white mt-"><i style="color:yellow;"  class="fa fa-calendar fa-fw w3-margin-right"></i><strong>    17 Years Old</strong></h5>
-						
-						<br>
+
+					<hr style="color:white">
+						<h5 data-bs-target="#bangg" data-bs-toggle="collapse" style="margi: 40px" class="text-white mt-"><i style="color:yellow;"  class="fa fa-calendar fa-fw w3-margin-right"></i><strong>    17 Years Old</strong>     <i style="color" class="fa fa-arrow-down"></i></h5>
+						<div class="collapse" id="bangg">
+							
+							<h5  style="margi: 40px" class="text-white mt-"><strong>20 December</strong></h5>	
+							<h5  style="margi: 40px" class="text-white mt-"><strong>2004</strong></h5>	
+						</div>
+						<hr style="color:white">
 						<h5 style="margi: 40px" class="text-white mt-"><i style="color:red;"  class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i><strong>    Education W3school</strong></h5>
 					
-						<br>
-						<h5 class="text-white mt-"><i style="color:limegreen"  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    Tehran</strong></h5>
+						<hr style="color:white">
+						<h5 data-bs-target="#chain" data-bs-toggle="collapse" class="text-white mt-"><i style="color:limegreen"  class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    Tehran</strong>       <i style="color" class="fa fa-arrow-down"></i></h5>
+						<div class="collapse" id="chain">
+						<hr style="color:white">
+						<h5 data-bs-target="#chain" data-bs-toggle="collapse" class="text-white mt-"><strong>    Hashemi $treet</strong>      </h5>
 						
-						<br>   
+						</div>
+						<hr style="color:white">
 						<h5 class="text-white mt-"><i style="color:blue"  class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i><strong>    09197319201</strong></h5>
 						
-						<br>
-						<h5 class="text-white mt-"><i style="color:purple"  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>Mehtisup</strong>
+						<hr style="color:white">
+						<h5 class="text-white mt-"><i style="color:purple"  class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>Mehtisup</strong> 
 						</h5>
-						<br>
-						<h5 class="text-white mt-"><i style="color:red"  class="fa fa-instagram fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>Instagram</strong>
+						<hr style="color:white">
+						<h5 data-bs-target="#glo" data-bs-toggle="collapse" class="text-white mt-"><i style="color:red"  class="fa fa-instagram fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>Instagram</strong>     <i class="fa fa-arrow-down"></i>
 						</h5>
-						<br>
+						<div class="collapse" id="glo">
+						<hr style="color:white">
+						<h5 data-bs-target="#chain" data-bs-toggle="collapse" class="text-white mt-"><strong>Mehtisup</strong>	
+						</div>
+						<hr style="color:white">
 						<h5 class="text-white mt-"><i style="color:black"  class="fa fa-github fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>Github</strong>
 						</h5>
-						<br>
+						<hr style="color:white">
 						<h5 class="text-white mt-"><i style="color:white"  class="fa fa-telegram
 							fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>Telegram</strong>
 						</h5>
-						<br>
+						<hr style="color:white">
 						<h5 class="text-white mt-"><i style="color:green"  class="fa fa-whatsapp fa-fw w3-margin-right w3-large w3-text-teal"></i>      <strong>Whats App</strong>
 						</h5>
 
@@ -1259,6 +1358,7 @@
 				<script>
 				var typed = new Typed(".auto-input", {
 				strings: ["Mehti Bozorgi"],
+
 				typeSpeed: 100,
 				backSpeed: 100,
 				loop: true
@@ -1286,8 +1386,7 @@
 				</div>
 				</div>
 
-				<button type="button" id="brr" onclick="topFunction()" style=";background-color: none;border: none;outline: none;border-radius: 50%;z-index: 10000;color:none;border:none;padding:7px;"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYgIun7KGk8QEhKc-rA172cHtJzIUuuMdH4Q&usqp=CAU" style="width:50px;height:50px;border-radius:50%"></button>
-
+				
 				<script>
 				var over = document.getElementById("brr");
 
@@ -1335,7 +1434,8 @@
 				</div>
 			
 
-
+			
+				
 
 				<div class="container-fluid bg-white mt-5">
 				<div class="row bg-black">
@@ -1347,7 +1447,7 @@
 				Construction
 				Buildwall is completely client-oriented company. We are able meet schedule deadlines with top quality<br>  
 					<br>
-				<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#chicago" id="pants">HIRE ME</button><span style="color: black">__</span><button type="button" class="btn btn-outline-success" data-bs-toggle="modal" data-bs-target="#chicago" id="pants">CONTACT</button>
+				<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#chicago" id="">HIRE ME</button>
 				<br>
 
 
@@ -1358,16 +1458,31 @@
 
 				</div>
 
-				<div class="row  bg-black ">
+				<div class="row  bg-black  ">
 				<div class="col-sm-5">
 				<h1 class="text-white mt-2">About Me</h1>
-				<p class="text-white mt-3" style="font-size:">Name : Mehti             </p>
-				<p class="text-white" style="font-size:">Last Name : Bozorgi               </p>
-				<p class="text-white" style="font-size:">Age : 17                  </p>
-				<p class="text-white" style="font-size:">City : New York</p>
-				<p class="text-white" style="font-size:"> Gmail : Mehtisup</p>
-				<p class="text-white" style="font-size:">Country : United State</p>
-				<p class="text-white" style="font-size:">Job : Web Designer & Programmer</p><br> 
+                <div style="width:250px;text-align: left;background-color: white;" id="RIP">
+				<div id="rip"></div>
+				<p class="text-black mt-3" style="font-size:20px;margin-left: 3px;">      Name : Mehti             </p>
+            </div>
+            <div class="bg-white " style="width:250px;text-align: ;">
+				<p class="text-black" style="font-size:20px;margin-left: 3px">Last Name : Bozorgi               </p>
+            </div>
+                <div class="bg-white " style="width:250px;text-align: ;">
+				<p class="text-black" style="font-size:20px;margin-left: 3px">Age : 17                  </p>
+            </div>
+            <div class="bg-white " style="width:250px;text-align: ;">
+				<p class="text-black" style="font-size:20px;margin-left: 3px">City : New York</p>
+                </div>
+                <div class="bg-white " style="width:250px;text-align: ;">
+				<p class="text-black" style="font-size:20px;margin-left: 3px"> Gmail : Mehtisup</p>
+                </div>
+                <div class="bg-white " style="width:250px;text-align: ;">
+				<p class="text-black" style="font-size:20px;margin-left: 3px">Country : United State</p>
+                
+				</div>
+				<br>
+                
 
 
 
@@ -1411,54 +1526,11 @@
 				</div>
 				</div>
 
-			<div class="container bg-white p-5" style="text-align: center;">
-			<h1 class="text-black">My Blog</h1>
-			<p   class="text-black col-sm-">Loreadipisic elit, sed do eiusmompor incididunt ut
-labore et d magna aliqua enim sed do sit.</p>
-			<div class="row mt-3">
-			<div class="col-sm-4 bg-white p-2" id="niggaa">
-			<div class="love"></div>
-			<img src="https://static.vecteezy.com/ti/vettori-gratis/p1/2099443-codice-di-programmazione-codifica-o-hacker-background-codice-di-programmazione-icona-realizzato-con-codice-binario-dati-binari-digitali-e-codice-digitale-streaming-vettoriale.jpg" style="width:100%;height:190px">
-			<h4 class="text-white p-4" style="background-color:black;">Website Number 1<br><span style="font-size:15px" >Price: 10$     <i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star "></i>
-			
-			<i class="fa fa-star "></i></span><br><br><button id="steal" style="width:100px;background-color: rgb(255, 0, 0);" type="button" class="btn text-white"><b>
-				<span style="">Buy</span></b></button>	</h4>	
 		
-				
-			</div>	
-			<div class="col-sm-4 bg-white p-2" id="niggaa">
-			<img src="https://images.all-free-download.com/images/graphiclarge/software_development_and_coding_programming_of_concept_data_processing_computer_code_with_window_interface_flat_isometric_illustration_6844797.jpg" style="width:100%;height: 190px;">	
-			
-			
-			<h4  class="text-white bg-black p-4">Website Number 2<br><span style="font-size:15px" >Price: 17$      <i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star "></i></span><br><br><button id="steal" style="width:100px;background-color: rgb(255, 0, 0);" type="button" class="btn text-white"><b>
-				Buy</b></button>	</h4>
-				
-				
-			</div>	
-			<div class="col-sm-4 bg-white p-2" id="niggaa">
-				<img src="https://static.vecteezy.com/system/resources/previews/002/949/141/non_2x/programming-code-coding-or-hacker-background-vector.jpg" style="width:100%;height: 190px;">	
-				
-				<h4 class="text-white bg-black p-4">Website Number 3<br><span style="font-size:15px" >Price: 7$     <i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star checked"></i>
-			<i class="fa fa-star "></i></span><br><br><button id="steal" style="width:100px;background-color: rgb(255, 0, 0);" type="button" class="btn text-white"><b>
-				Buy</b></button>	</h4>	
 	
-				
-			</div>		
-			</div>	
 			</div>
 
 
-
 				</div>
 				</div>
 				</div>
@@ -1468,7 +1540,7 @@ labore et d magna aliqua enim sed do sit.</p>
 
 
 
-				<div class="modal" id="chicago">
+				<div class="modal mt-5" id="chicago">
 				<div class="modal-dialog">
 				<div class="modal-content">
 				<div class="modal-header">
@@ -1492,9 +1564,9 @@ labore et d magna aliqua enim sed do sit.</p>
 
 				<div style="text-align: ;" class="container-fluid bg-blackt-5 mt-5">
 				<ul  class="nav nav-pills" role="tablist">
-					<li style="border-radius:10px;margin-left:px;background-color:red;color:white"  class="nav-item text-white "><a style="color:;border-radius: 10px;background-color: ;" href="#meti" class="nav-link text-white	 active" data-bs-toggle="pill">HTML</a></li>
-					<li style="border-radius: 10px;margin-left: 15px;background-color:red;color:white" class="nav-item "><a style="border-radius:10px;" href="#jack" class="nav-link text-white" data-bs-toggle="pill">JAVA SCRIPT</a></li>
-					<li style="border-radius:10px;margin-left:15px;background-color:red;color:white" class="nav-item "><a style="color:;border-radius: 10px;" href="#pack" class="nav-link text-white" data-bs-toggle="pill">CSS</a></li>
+					<li style="border-radius:10px;margin-left:px;background-color:;color:black"  class="nav-item text-black "><a style="color:;border-radius: 10px;background-color: ;" href="#meti" class="nav-link text-white	 active" data-bs-toggle="pill">HTML</a></li>
+					<li style="border-radius: 10px;margin-left: 15px;background-color:;color:black" class="nav-item text-black "><a style="border-radius:10px;" href="#jack" class="nav-link text-white" data-bs-toggle="pill">JAVA SCRIPT</a></li>
+					<li style="border-radius:10px;margin-left:15px;background-color:;color:black" class="nav-item text-black "><a style="color:;border-radius: 10px;" href="#pack" class="nav-link text-white" data-bs-toggle="pill">CSS</a></li>
 				</ul>	
 				</div>
 
@@ -1504,7 +1576,7 @@ labore et d magna aliqua enim sed do sit.</p>
 				<p class="text-white mt-3">HTML (HyperText MarkuWhat JavaScript is used for? JavaScript is used to develop interactive web applications. JavaScript can power featured like interactive images, carousels, and forms. The language can be used with back-end frameworks like Node. js to power the mechanics behind a web page, such as form processing and payments.
 			What is difference between Java and JavaScript? Key differences between Java and JavaScript: Java is an OOP programming language while Java Script is an OOP scripting language. Java creates applications that run in a virtual machine or browser while JavaScript code p Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>	
 				
-				<a type="" class="	 text-white" style="background-color;color:white;padding: 5px;border-radius: 0px;cursor:pointer"  data-bs-toggle="collapse" data-bs-target="#rehab" id="list"><div id="end"></div>MORE</a>
+				<a type="" class="	 text-white" style="background-color:black;color:purple;padding: 5px;border-radius: 0px;cursor:pointer"  data-bs-toggle="collapse" data-bs-target="#rehab" id="list"><div id="end"></div><span style="color:purple;background-color: ;">MORE</span></a>
 				<div class="collapse" id="rehab">
 				<p class="text-white mt-3 ">HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally<br> used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS)<br> or functionality/behavior (JavaScript).HTML (HyperText Markup Language) is the most basic building block of the Web. It defines the meaning and structure of web content. Other technologies besides HTML are generally used to describe a web page's appearance/presentation (CSS) or functionality/behavior (JavaScript).</p>	
 				</div>
@@ -1514,7 +1586,7 @@ labore et d magna aliqua enim sed do sit.</p>
 				<h1 class="text-white mt-4">JAVASCRIPT</h1>	
 				<p class="text-white mt-3">JavaScript, often abbreviated JS, is a programming language that is one of the core tech What JavaScript is used for? JavaScript is used to develop interactive web applications. JavaScript can power featured like interactive images, carousels, and forms. The language can be used with back-end frameworks like Node. js to power the mechanics behind a web page, such as form processing and payments.
 			What is difference between Java and JavaScript? Key differences between Java and JavaScript: Java is an OOP programming language while Java Script is an OOP scripting language. Java creates applications that run in a virtual machine or browser while JavaScript codenologies of the World Wide Web, alongside HTML and CSS. Over 97% of websites use JavaScript on the client side for web page behavior, often incorporating third-party libraries</p>
-				<a class="text-white" style="background-color: red;color: white;padding:5px;cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#aye">MORE</a>
+				<a class="text-white" style="background-color: black;color: purple;padding:5px;cursor: pointer;" data-bs-toggle="collapse" data-bs-target="#aye"><span style="color:purple">MORE</span></a>
 				<div class="collapse" id="aye">
 				<p class="text-white mt-3">What JavaScript is used for?
 			JavaScript is used to develop interactive web applications. JavaScript can power featured like interactive images, carousels, and forms. The language can be used with back-end frameworks like Node. js to power the mechanics behind a web page, such as form processing and payments.<br>What is difference between Java and JavaScript?
@@ -1526,7 +1598,7 @@ labore et d magna aliqua enim sed do sit.</p>
 				<p class="text-white mt-3 ">Cascading Style Sheets is a style sheet language  What JavaScript is used for? JavaScript is used to develop interactive web applications. JavaScript can power featured like interactive images, carousels, and forms. The language can be used with back-end frameworks like Node. js to power the mechanics behind a web page, such as form processing and payments.
 			What is difference between Java and JavaScript? Key differences between Java and JavaScript: Java is an OOP programming language while Java Script is an OOP scripting language. Java creates applications that run in a virtual machine or browser while JavaScript codeused for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript
 					</p>
-				<a class="text-white mt-3" style="background-color: red;color:white ;padding: 5px;cursor:pointer" data-bs-target="#green" data-bs-toggle="collapse">MORE</a>
+				<a class="text-white mt-3" style="background-color: black;color:purple ;padding: 5px;cursor:pointer" data-bs-target="#green" data-bs-toggle="collapse"><span style="color:purple">MORE</span></a>
 				<div class="collapse" id="green">
 				<p class="text-white mt-3">Cascading Style Sheets is a style sheet language used for describing the presentation of a document written in a markup language such as HTML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript. Wikipedia
 			Developed by: World Wide Web Consortium (W3C)
@@ -1544,11 +1616,27 @@ labore et d magna aliqua enim sed do sit.</p>
 				</div>
 				<br>
 				<br>
+			<div class="container-fluid p-5 bg-primary">
+			<div class="row p-1">
+			<div class="col-sm-5 p-5">
+			<img src="https://png.pngtree.com/png-vector/20190611/ourlarge/pngtree-web-development-illustration-modern-can-be-used-for-landing-pages-web-png-image_1496210.jpg" style="width:100%;height:200px">
+			<h1>HELLO WORLD</h1>	
+			</div>	
+			<div class="col-sm-5 p-5">
+			<img src="https://png.pngtree.com/png-vector/20210417/ourlarge/pngtree-mobile-network-application-development-png-image_3228759.jpg" style="width:100%;height:200px">
+			<h1>HELLO WORLD</h1>	
+			</div>	
+			<div class="col-sm-5 p-5">
+			<img src="https://img.freepik.com/free-vector/css-html-programming-languages-computer-programming-coding-it-female-programmer-cartoon-character-software-website-development_335657-760.jpg" style="width:100%;height:200px">
+			<h1>HELLO WORLD</h1>	
+			</div>	
+			</div>	
+			</div>
 				
-				<div class="container-fluid bg-success p-5">
+				<div class="container-fluid bg-black p-5">
 
 			<div class="row">
-				<div class="col-sm-3 bg-success p-2">
+				<div class="col-sm-3 bg-black p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Project Awards   <br> <span style="color:blueviolet"><b>23</b></span><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>    
@@ -1557,7 +1645,7 @@ labore et d magna aliqua enim sed do sit.</p>
 					<button type="button" class="btn mt-2" style="background-color: red;color:white">Projects</button></div>    
 			</div>    
 			</div>
-			<div class="col-sm-3 bg-success p-2">
+			<div class="col-sm-3 bg-black p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Happy Clients  <br> <span style="color:blueviolet"><b>13</b></span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>
@@ -1566,7 +1654,7 @@ labore et d magna aliqua enim sed do sit.</p>
 					<button type="button" class="btn mt-2" style="background-color: red;color:white">Clients</button></div>    
 			</div>    
 			</div>
-			<div class="col-sm-3 bg-success p-2">
+			<div class="col-sm-3 bg-black p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Total Reviews   <br> <span style="color:blueviolet"><b>40</b></span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>  
@@ -1576,7 +1664,7 @@ labore et d magna aliqua enim sed do sit.</p>
 			</div>  
 			</div>    
 			</div>
-			<div class="col-sm-3 bg-success p-2">
+			<div class="col-sm-3 bg-black p-2">
 			<div id="rain" class="bg-white text-black p-3">
 			<h4 id="how" style="text-align: center;">Active Users  <br> <span style="color:blueviolet"><b>103</b></span> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSg1L6bu6vaYsPbxT6_ZENBc0mLrtO8GxdPsQ&usqp=CAU" style="width: 50px;hie
 				4;"></h4>
@@ -1591,7 +1679,7 @@ labore et d magna aliqua enim sed do sit.</p>
 			</div>
 				<br>
 				<h1 class="text-white" style="text-align:center">Programming Languages</h1>
-				<p style="text-align:center" class="text-white">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua enim sed do sit.
+				<p style="text-align:center" class="text-white">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore 
 
 </p>
 				<br>
@@ -1654,7 +1742,7 @@ labore et d magna aliqua enim sed do sit.</p>
 				<h3 class="text-black">Search</h3></div>
 			</div>	
 			<div class="modal-body">
-				<input style="height:px;margin-left:px;width:100%" type="input">
+				<input placeholder="Enter" style="height:px;margin-left:px;width:100%" type="input">
 				<br>
 				<br>
 				<button type="button" class="btn btn-primary">Search</button><button type="button" class="btn btn-danger" data-bs-dismiss="modal" style="margin-left:5px;">Cancel</button>
@@ -1724,11 +1812,15 @@ labore et d magna aliqua enim sed do sit.</p>
 				" class="text-white">Lorem ipsum dolor sit amet, consect adipisic elit, sed do eiusmod tempor incididunt ut labore et d magna aliqua enim sed sldkjfla lkasjfl sfmpor incididunt ut labore et d magna aliqua enim sed do sit.</p>
 				<br>
 				<div class="row" style="text-align: center;">
-					<div  id="crazy" class="col-sm-5 p-3 bg-white">
+					<div  id="crazy" class="col-sm-5 p-3 bg-black">
+						<div class="p-1" style="background-color: whitesmoke">
+						<img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_96211011_2000134813806405780_414357.jpg" style="width:100%;height:200px;border-radius:%">
+							<p style="text-align: left;margin-left:10px" class="text-black"><i class="fa fa-calendar"></i>      20 December 2004</p>
+						<h5 style="text-align: left" class="text-black mt- p-2">Stive Jobs<br>Web Programmer</h5>
 						
-						<img src="https://www.incimages.com/uploaded_files/image/1920x1080/getty_96211011_2000134813806405780_414357.jpg" style="width:180px;height:180px;border-radius:50%">
-						<h1 class="text-black">Stive Jobs</h1>
-						<p>Stive jobs is my idol. He  is best man in the technology world. I love him. I'm ambitous person. I've always set myself goals. More than too.</p>
+						<p style="text-align: left;margin-left:10px" class="text-black">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tem  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tem<br>
+							</p>
+						</div>
 						<div class="container" id="fame">
 							<h1 class="mt-3" id="pantss" style="padding:4px"><i class="fa fa-telegram"></i>      Telegram</h1>
 							<br>
@@ -1782,35 +1874,50 @@ labore et d magna aliqua enim sed do sit.</p>
 				</div>
 			</div>
 
-<div class="container-fluid bg-dark mt-5 p-5">
-<div class="row">
-<div class="col-sm-4">
-<h3 class="text-white" style="border-bottom: ;1px solid red">Mehti$up</h3>
-<br>	
-<p class="text-white">  eiusmod tempor incididunt ut labore et d magna aliqua enim sed sldkjfla lkasjfl sfmpor incididunt ut labore et d magna aliqua enim sed do si</p><a id="loose" style="background-color:red ;color: white;"  href="https://t.me/mehtisupp" class="fa fa-telegram"></a>
-							<a id="loosee" style="background-color: red;" href="https://youtu.be/VDDwvCpzRWk" class="fa fa-youtube"></a>
-							<a id="looseee" style="background-color:red;" href="https://www.instagram.com/tv/Cb-c2UzlBl7/?utm_source=ig_web_copy_link" class="fa fa-instagram"></a>
-						
-							<a id="looseeeee" style="background-color: red;" href="https://github.com/Mehtisup/Website.git" class="fa fa-github " style="background-color:red"></a>
-</div>
-<div class="col-sm-1 bg-dark"><p class="text-dark">SKLJDF</p></div>
-<div class="col-sm-4">
-<h3 class="text-white">Information</h3>
-<br>
-<p class="text-white">Address: USA , New York City, Paris Street, Gang Alley, Number24, Floor 4</p>
-<p class="text-white">Phone Number: +98 9197319201</p>
-<p class="text-white">Gmail: Mehtisup@gmail.com</p>
-</div>	
-<div class="col-sm-1 bg-dark"><p class="text-dark">SKLJDF</p></div>
-<div class="col-sm-2">
-<h3 class="text-white">Send Message</h3>
-<br>
-<input type="text" placeholder="Enter" style="padding: 3px;"><br><br>
-<button type="button" class="btn btn-primary">Send</button>
-</div>
 
-</div>	
-</div>
+			<div class="bg-dark container-fluid p-5 mt-5">
+				<div class="row">
+					<div class="col-sm-4">
+						<h3 class="text-white" >Mehti$up</h3>
+						<br>
+						<p class="text-white">Holisticly reintermediate intuitive factured products after ethical to rables. Monotonectally.</p>
+						
+						<a id="loose" style="background-color:black ;color: white;"  href="https://t.me/mehtisupp" class="fa fa-telegram"></a>
+							<a id="loosee" style="background-color: black;" href="https://youtu.be/VDDwvCpzRWk" class="fa fa-youtube"></a>
+							<a id="looseee" style="background-color:black;" href="https://www.instagram.com/tv/Cb-c2UzlBl7/?utm_source=ig_web_copy_link" class="fa fa-instagram"></a>
+						
+							<a id="looseeeee" style="background-color: black;" href="https://github.com/Mehtisup/Website.git" class="fa fa-github " style="background-color:red"></a>
+					</div>
+					<div class="col-sm-1 bg-dark text-dark"><h1>a</h1></div>
+				
+					
+					<div class="col-sm-3">
+					<h3 class="text-white">Products</h3>
+					<br>	
+					<p class="text-white">1. Pricing Plan</p>
+					<p class="text-white">2. Performance</p>
+					<p class="text-white">3.  User Navigation</p>
+					<p class="text-white">4. Page Speed</p>
+					</div>
+					<div class="col-sm-1 bg-dark text-dark"><h1>a</h1></div>
+					<div class="col-sm-3">
+						<h3 class="text-white">Contact</h3>
+						<br>
+						
+						<p class="text-white"><i class="fa fa-home" style="font-size:20px"></i>             515 Carriage Court, Coachella, CA, 92236 USA</p>
+						<p class="text-white"><i class="fa fa-phone" style="font-size: 20px"></i>          09197319201</i></p>
+						<p class="text-white"><i class="fa fa-envelope" style="font-size: 20px"></i>          Mehtisup@gmail.com</i></p>
+					</div>
+				</div>
+			
+			</div>
+			<div class="container-fluid bg-black p-2">	
+				<p class="text-white mt-2" style="text-align:center">Created by Mehti Bozorgi 2022</p>
+			</div>
+
+			
+
+
 
 
 				</body>
